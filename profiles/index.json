@@ -1,0 +1,125 @@
+{
+  "profiles": [
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "ij",
+      "model": "iJF",
+      "profileId": "carel-modbus-ijf-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 225,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/ij/carel-modbus-ijf-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "ij",
+      "model": "iJFSmall",
+      "profileId": "carel-modbus-ijfsmall-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 204,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/ij/carel-modbus-ijfsmall-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "ij",
+      "model": "iJS",
+      "profileId": "carel-modbus-ijs-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 223,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/ij/carel-modbus-ijs-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "ij",
+      "model": "iJW_14_mb",
+      "profileId": "carel-modbus-ijw-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 265,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/ij/carel-modbus-ijw-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxone",
+      "model": "MPXone Advanced",
+      "profileId": "carel-modbus-mpxone-advanced-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 300,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxone/carel-modbus-mpxone-advanced-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxone",
+      "model": "MPXone Basic",
+      "profileId": "carel-modbus-mpxone-basic-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 230,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxone/carel-modbus-mpxone-basic-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxone",
+      "model": "MPXone Medium",
+      "profileId": "carel-modbus-mpxone-medium-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 265,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxone/carel-modbus-mpxone-medium-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxpro",
+      "model": "MPXPRO SPM",
+      "profileId": "carel-modbus-mpxpro-spm-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 775,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxpro/carel-modbus-mpxpro-spm-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxzero",
+      "model": "MPXzero Standard",
+      "profileId": "carel-modbus-mpxzero-standard-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 429,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxzero/carel-modbus-mpxzero-standard-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "mpxzero",
+      "model": "MPXzero VCC",
+      "profileId": "carel-modbus-mpxzero-vcc-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 494,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/mpxzero/carel-modbus-mpxzero-vcc-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "sync",
+      "model": "Sync Controller",
+      "profileId": "embraco-modbus-sync-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 11,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/embraco/sync/embraco-modbus-sync-v1.0.0.json",
+      "vendor": "embraco"
+    },
+    {
+      "deviceClass": "energy-meter",
+      "family": "multipower",
+      "model": "MULTIPOWER",
+      "profileId": "fullgauge-modbus-multipower-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 198,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/fullgauge/multipower/fullgauge-modbus-multipower-v1.0.0.json",
+      "vendor": "fullgauge"
+    }
+  ],
+  "schema": 2
+}

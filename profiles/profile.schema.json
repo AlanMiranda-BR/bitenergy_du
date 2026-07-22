@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/profile.schema.json",
+  "title": "Hive-Link Controller Profile v2",
+  "description": "Profile canônico consumido pelo firmware Hive-Link e pelo Painel Bit Energy. Referência humana: docs/profile-schema.md.",
+  "type": "object",
+  "required": ["schema", "profileId", "deviceClass", "vendor", "model", "protocol", "bus", "regs"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 2,
+      "description": "Versão do contrato. Sempre 2."
+    },
+    "profileId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+-[a-z0-9-]+-[a-z0-9-]+-v\\d+\\.\\d+\\.\\d+$",
+      "maxLength": 64,
+      "description": "Chave canônica <vendor>-<protocol>-<model>-v<semver>. Casa 1:1 com o filename sem .json."
+    },
+    "deviceClass": {
+      "enum": ["refrigeration-controller", "energy-meter", "generic"]
+    },
+    "vendor": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+$",
+      "maxLength": 32
+    },
+    "model": {
+      "type": "string",
+      "maxLength": 32
+    },
+    "family": {
+      "type": "string",
+      "maxLength": 32
+    },
+    "protocol": {
+      "enum": ["modbus-rtu", "carel"]
+    },
+    "bus": {
+      "type": "object",
+      "required": ["baud"],
+      "additionalProperties": false,
+      "properties": {
+        "baud":      { "type": "integer", "minimum": 300, "maximum": 460800 },
+        "bits":      { "enum": [7, 8], "default": 8 },
+        "parity":    { "enum": ["N", "E", "O"], "default": "N" },
+        "stop":      { "enum": [1, 2], "default": 1 },
+        "endian":    { "enum": ["L", "B"], "default": "L" },
+        "wordOrder": { "enum": ["AB", "BA"], "default": "AB" }
+      }
+    },
+    "quirks": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "addrFmt":       { "enum": ["asciiChar", "asciiDec"] },
+        "reqSpacingMs":  { "type": "integer", "minimum": 0, "maximum": 60000 },
+        "slaveAddr":     { "type": "integer", "minimum": 1, "maximum": 247 }
+      }
+    },
+    "bitmasks": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9_]{1,16}$": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "type": "object",
+            "required": ["bp", "l"],
+            "additionalProperties": false,
+            "properties": {
+              "bp":   { "type": "integer", "minimum": 0, "maximum": 31 },
+              "n":    { "type": "integer", "minimum": 1, "maximum": 32, "default": 1 },
+              "l":    { "type": "string", "maxLength": 128 },
+              "enum": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 256,
+                "items": { "type": ["string", "null"], "maxLength": 64 }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "regs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1024,
+      "items": {
+        "type": "object",
+        "required": ["id", "k", "a", "fc", "t"],
+        "additionalProperties": false,
+        "properties": {
+          "id":  { "type": "integer", "minimum": 1, "maximum": 65535 },
+          "k":   { "type": "string", "pattern": "^[A-Za-z0-9_/.\\-~]+$", "minLength": 1, "maxLength": 24 },
+          "a":   { "type": "integer", "minimum": 0, "maximum": 65535 },
+          "fc":  { "type": "integer", "minimum": 1, "maximum": 6 },
+          "t":   { "enum": ["bit", "u8", "i8", "u16", "i16", "u32", "i32", "f32", "alm"] },
+          "s":   { "type": "number", "default": 1 },
+          "u":   { "type": "integer", "minimum": 0, "maximum": 255, "default": 0 },
+          "l":   { "type": "string", "maxLength": 128 },
+          "w":   { "enum": [0, 1], "default": 0 },
+          "g":   { "type": "integer", "minimum": 0, "maximum": 15, "default": 15 },
+          "min": { "type": "number" },
+          "max": { "type": "number" },
+          "cat": { "type": "integer", "minimum": 0, "maximum": 255, "default": 0 },
+          "wa":  { "type": "integer", "minimum": 0, "maximum": 65535 },
+          "wfc": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "bm":  { "type": "string", "pattern": "^[a-z0-9_]{1,16}$" },
+          "enum": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 256,
+            "items": { "type": ["string", "null"], "maxLength": 64 }
+          }
+        }
+      }
+    }
+  }
+}

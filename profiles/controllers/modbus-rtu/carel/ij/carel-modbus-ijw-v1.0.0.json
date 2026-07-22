@@ -1,0 +1,2536 @@
+{
+  "bus": {
+    "baud": 19200,
+    "bits": 8,
+    "endian": "B",
+    "parity": "N",
+    "stop": 2
+  },
+  "deviceClass": "refrigeration-controller",
+  "family": "ij",
+  "model": "iJW_14_mb",
+  "profileId": "carel-modbus-ijw-v1.0.0",
+  "protocol": "modbus-rtu",
+  "quirks": {},
+  "regs": [
+    {
+      "a": 0,
+      "fc": 3,
+      "id": 1,
+      "k": "/4",
+      "l": "Virtual probe composition:0 = Air off (Sm) 100 = Air ON (Sr)",
+      "t": "u16",
+      "u": 3,
+      "w": 1
+    },
+    {
+      "a": 64,
+      "fc": 3,
+      "id": 2,
+      "k": "/cA",
+      "l": "Outlet temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 68,
+      "fc": 3,
+      "id": 3,
+      "k": "/cb",
+      "l": "Defrost temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 73,
+      "fc": 3,
+      "id": 4,
+      "k": "/cc",
+      "l": "Intake temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 106,
+      "fc": 3,
+      "id": 5,
+      "k": "/cF",
+      "l": "Defrost temperature probe 2 offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 114,
+      "fc": 3,
+      "id": 6,
+      "k": "/cg",
+      "l": "Auxiliary temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 119,
+      "fc": 3,
+      "id": 7,
+      "k": "/cH",
+      "l": "Auxiliary temperature probe 2 offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 124,
+      "fc": 3,
+      "id": 8,
+      "k": "/cI",
+      "l": "Ambient temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 129,
+      "fc": 3,
+      "id": 9,
+      "k": "/cM",
+      "l": "Glass temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 134,
+      "fc": 3,
+      "id": 10,
+      "k": "/co",
+      "l": "Condenser temperature probe offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 139,
+      "fc": 3,
+      "id": 11,
+      "k": "/cp",
+      "l": "Humidity probe offset calibration",
+      "t": "f32",
+      "w": 1
+    },
+    {
+      "a": 144,
+      "fc": 3,
+      "id": 12,
+      "k": "/cq",
+      "l": "Antifreeze temperature offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 149,
+      "fc": 3,
+      "id": 13,
+      "k": "/cr",
+      "l": "Product temperature offset calibration",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 9,
+      "fc": 3,
+      "id": 14,
+      "k": "/FA",
+      "l": "Assign Air off temp. probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 39,
+      "fc": 3,
+      "id": 15,
+      "k": "/Fb",
+      "l": "Assign defrost temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 154,
+      "fc": 3,
+      "id": 16,
+      "k": "/Fc",
+      "l": "Assign intake temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 155,
+      "fc": 3,
+      "id": 17,
+      "k": "/FF",
+      "l": "Assign defrost temperature probe 2",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 159,
+      "fc": 3,
+      "id": 18,
+      "k": "/FG",
+      "l": "Assign auxiliary temperature probe 1",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 160,
+      "fc": 3,
+      "id": 19,
+      "k": "/FH",
+      "l": "Assign auxiliary temperature probe 2",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 164,
+      "fc": 3,
+      "id": 20,
+      "k": "/FI",
+      "l": "Assign Ambient temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 165,
+      "fc": 3,
+      "id": 21,
+      "k": "/FM",
+      "l": "Assign glass temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 169,
+      "fc": 3,
+      "id": 22,
+      "k": "/Fo",
+      "l": "Assign condenser temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 170,
+      "fc": 3,
+      "id": 23,
+      "k": "/FP",
+      "l": "Assign humidity probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 174,
+      "fc": 3,
+      "id": 24,
+      "k": "/FQ",
+      "l": "Assign antifreeze temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 175,
+      "fc": 3,
+      "id": 25,
+      "k": "/FR",
+      "l": "Assign product temperature probe",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 35,
+      "fc": 3,
+      "id": 26,
+      "k": "A0",
+      "l": "Temperature alarms reset differential",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 21,
+      "fc": 1,
+      "id": 27,
+      "k": "A1",
+      "l": "Alarm thresholds (AL, AH) relative to the set point St or absolute",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 59,
+      "fc": 3,
+      "id": 28,
+      "k": "A7",
+      "l": "Delay time for delayed external alarm",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 82,
+      "fc": 3,
+      "id": 29,
+      "k": "Ac",
+      "l": "Dirty condenser alarm set point",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 88,
+      "fc": 3,
+      "id": 30,
+      "k": "Acd",
+      "l": "Dirty condenser alarm delay",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 89,
+      "fc": 3,
+      "id": 31,
+      "k": "Ad",
+      "l": "Delay time for high and low temperature alarms (AH, AL)",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 90,
+      "fc": 3,
+      "id": 32,
+      "k": "Add",
+      "l": "Door alarm delay and high temperature alarm delay after door opening",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 91,
+      "fc": 3,
+      "id": 33,
+      "k": "AE",
+      "l": "Dirty condenser alarm differential temperature",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 93,
+      "fc": 3,
+      "id": 34,
+      "k": "AF",
+      "l": "Antifreeze alarm threshold",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 95,
+      "fc": 3,
+      "id": 35,
+      "k": "Afd",
+      "l": "Antifreeze alarm delay",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 4,
+      "fc": 2,
+      "id": 36,
+      "k": "AFr",
+      "l": "Antifreeze alarm status",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 36,
+      "fc": 3,
+      "id": 37,
+      "k": "AH",
+      "l": "Relative high temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 85,
+      "fc": 3,
+      "id": 38,
+      "k": "AHA",
+      "l": "Absolute high temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 37,
+      "fc": 3,
+      "id": 39,
+      "k": "AL",
+      "l": "Relative low temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 84,
+      "fc": 3,
+      "id": 40,
+      "k": "ALA",
+      "l": "Absolute low temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 32,
+      "fc": 4,
+      "id": 41,
+      "k": "ALr",
+      "l": "Cumulative Alarms",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 6,
+      "fc": 4,
+      "id": 42,
+      "k": "ASt",
+      "l": "Regulation temperature working setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 16,
+      "fc": 2,
+      "id": 43,
+      "k": "AtS",
+      "l": "Autostart in pump down",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 1,
+      "id": 44,
+      "k": "AuC",
+      "l": "Auxiliary command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 4,
+      "id": 45,
+      "k": "Aux",
+      "l": "Auxiliary temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 21,
+      "fc": 4,
+      "id": 46,
+      "k": "Aux2",
+      "l": "Auxiliary temperature 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 191,
+      "fc": 3,
+      "id": 47,
+      "k": "c0",
+      "l": "Compressor, fan and AUX start delay at power on",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 195,
+      "fc": 3,
+      "id": 48,
+      "k": "c1",
+      "l": "Minimum time between compressor consecutive starts",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 1,
+      "id": 49,
+      "k": "c10",
+      "l": "Pump down by time or pressure",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 192,
+      "fc": 3,
+      "id": 50,
+      "k": "c11",
+      "l": "Second compressor start delay",
+      "t": "u16",
+      "u": 22,
+      "w": 1
+    },
+    {
+      "a": 194,
+      "fc": 3,
+      "id": 51,
+      "k": "c2",
+      "l": "Minimum compressor OFF time",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 196,
+      "fc": 3,
+      "id": 52,
+      "k": "c3",
+      "l": "Minimum compressor ON time",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 193,
+      "fc": 3,
+      "id": 53,
+      "k": "c4",
+      "l": "ON time for duty setting operation (Toff=15 minutes fixed) 0 = compressor always OFF 100 = compressor always ON",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 5,
+      "fc": 1,
+      "id": 54,
+      "k": "c7",
+      "l": "Defrost priority over continuous cycle",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 197,
+      "fc": 3,
+      "id": 55,
+      "k": "c8",
+      "l": "Compress. start delay after opening PD valve",
+      "t": "u16",
+      "u": 22,
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 1,
+      "id": 56,
+      "k": "c9",
+      "l": "Autostart in pump down",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 34,
+      "fc": 3,
+      "id": 57,
+      "k": "cc",
+      "l": "Running time in continuous cycle (0= continuous cycle disabled)",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 96,
+      "fc": 3,
+      "id": 58,
+      "k": "ccE",
+      "l": "Continuous cycle delta final setpoint",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 31,
+      "fc": 2,
+      "id": 59,
+      "k": "CE",
+      "l": "Configuration writing error",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 2,
+      "fc": 2,
+      "id": 60,
+      "k": "CHt",
+      "l": "Dirty condenser alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 34,
+      "fc": 2,
+      "id": 61,
+      "k": "cht",
+      "l": "cht",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 2,
+      "fc": 1,
+      "id": 62,
+      "k": "CnC",
+      "l": "Continuous cycle",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 7,
+      "fc": 3,
+      "id": 63,
+      "k": "d0",
+      "l": "Defrost type",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 182,
+      "fc": 3,
+      "id": 64,
+      "k": "d10",
+      "l": "Defrost time in “Running time\" mode 0 = function disabled",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 180,
+      "fc": 3,
+      "id": 65,
+      "k": "d11",
+      "l": "Defrost temperature threshold in \"Running time\" mode",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 6,
+      "fc": 3,
+      "id": 66,
+      "k": "d15",
+      "l": "Defrost activation delay",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 6,
+      "fc": 1,
+      "id": 67,
+      "k": "d4",
+      "l": "Enabling of defrost at start up",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 3,
+      "id": 68,
+      "k": "d5",
+      "l": "Defrost activation delay at start up or from DI",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 63,
+      "fc": 3,
+      "id": 69,
+      "k": "d8",
+      "l": "High temperature alarm delay after defrost",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 27,
+      "fc": 2,
+      "id": 70,
+      "k": "dA",
+      "l": "Delayed alarm from external contact",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 3,
+      "fc": 1,
+      "id": 71,
+      "k": "dAS",
+      "l": "DAY status / ECO mode",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 40,
+      "fc": 3,
+      "id": 72,
+      "k": "dd",
+      "l": "Dripping time",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 12,
+      "fc": 1,
+      "id": 73,
+      "k": "dfM",
+      "l": "Defrost command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 70,
+      "fc": 2,
+      "id": 74,
+      "k": "dFr",
+      "l": "defrost status",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 30,
+      "fc": 4,
+      "id": 75,
+      "k": "dFS",
+      "l": "Current defrost status",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 184,
+      "fc": 3,
+      "id": 76,
+      "k": "dHA",
+      "l": "Duration of drain heater output activation before defrost output activation",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 183,
+      "fc": 3,
+      "id": 77,
+      "k": "dHE",
+      "l": "Duration of drain heater output activation after defrost output deactivation",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 185,
+      "fc": 3,
+      "id": 78,
+      "k": "dHG",
+      "l": "Delay in hot gas",
+      "t": "u32",
+      "u": 22,
+      "w": 1
+    },
+    {
+      "a": 1,
+      "fc": 3,
+      "id": 79,
+      "k": "dI",
+      "l": "Defrost interval",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 198,
+      "fc": 3,
+      "id": 80,
+      "k": "DIA",
+      "l": "Assign immediate external alarm digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 199,
+      "fc": 3,
+      "id": 81,
+      "k": "DIb",
+      "l": "Assign delayed external alarm digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 200,
+      "fc": 3,
+      "id": 82,
+      "k": "DIc",
+      "l": "Assign enable defrost digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 201,
+      "fc": 3,
+      "id": 83,
+      "k": "DId",
+      "l": "Assign call defrost by digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 202,
+      "fc": 3,
+      "id": 84,
+      "k": "DIE",
+      "l": "Assign door switch with comp. and fans OFF digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 203,
+      "fc": 3,
+      "id": 85,
+      "k": "DIF",
+      "l": "Assign remote ON/OFF digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 204,
+      "fc": 3,
+      "id": 86,
+      "k": "DIG",
+      "l": "Assign curtain switch digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 205,
+      "fc": 3,
+      "id": 87,
+      "k": "DIH",
+      "l": "Assign continuous cycle digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 206,
+      "fc": 3,
+      "id": 88,
+      "k": "DIo",
+      "l": "Assign working parameters set change digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 207,
+      "fc": 3,
+      "id": 89,
+      "k": "DIP",
+      "l": "Assign door switch with comp. and fans ON digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 208,
+      "fc": 3,
+      "id": 90,
+      "k": "DIS",
+      "l": "Assign Generic Function Alarm according to DI status digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 209,
+      "fc": 3,
+      "id": 91,
+      "k": "DOA",
+      "l": "Assign solenoid/comp. digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 210,
+      "fc": 3,
+      "id": 92,
+      "k": "DOb",
+      "l": "Assign alarm digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 211,
+      "fc": 3,
+      "id": 93,
+      "k": "DOC",
+      "l": "Assign auxiliary digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 212,
+      "fc": 3,
+      "id": 94,
+      "k": "DOE",
+      "l": "Assign light digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 213,
+      "fc": 3,
+      "id": 95,
+      "k": "DOG",
+      "l": "Assign defrost digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 214,
+      "fc": 3,
+      "id": 96,
+      "k": "DOH",
+      "l": "Assign defrost 2 digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 215,
+      "fc": 3,
+      "id": 97,
+      "k": "DOI",
+      "l": "Assign evaporator fans digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 218,
+      "fc": 3,
+      "id": 98,
+      "k": "DOj",
+      "l": "Assign heater for dehumidification output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 219,
+      "fc": 3,
+      "id": 99,
+      "k": "DOk",
+      "l": "Assign auxiliary compressor without rotation output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 216,
+      "fc": 3,
+      "id": 100,
+      "k": "DOn",
+      "l": "Assign liquid valve digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 217,
+      "fc": 3,
+      "id": 101,
+      "k": "DOP",
+      "l": "Assign drain heaters digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 220,
+      "fc": 3,
+      "id": 102,
+      "k": "DOQ",
+      "l": "Assign Anti-sweat heaters digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 3,
+      "fc": 2,
+      "id": 103,
+      "k": "dor",
+      "l": "Door open for too long alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 221,
+      "fc": 3,
+      "id": 104,
+      "k": "DOS",
+      "l": "Assign Generic Stage 1",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 222,
+      "fc": 3,
+      "id": 105,
+      "k": "DOt",
+      "l": "Assign condenser fans digital output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 223,
+      "fc": 3,
+      "id": 106,
+      "k": "DOu",
+      "l": "Assign humidification output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 224,
+      "fc": 3,
+      "id": 107,
+      "k": "DOv",
+      "l": "Assign reverse with neutral zone output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 226,
+      "fc": 3,
+      "id": 108,
+      "k": "DOw",
+      "l": "Assign auxiliary parallel compressor output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 227,
+      "fc": 3,
+      "id": 109,
+      "k": "DOx",
+      "l": "Assign gasket heater output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 228,
+      "fc": 3,
+      "id": 110,
+      "k": "DOy",
+      "l": "Assign auxiliary compressor with rotation output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 225,
+      "fc": 3,
+      "id": 111,
+      "k": "DOz",
+      "l": "Assign dehumidifier external output",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 2,
+      "fc": 3,
+      "id": 112,
+      "k": "dP1",
+      "l": "Maximum defrost duration",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 4,
+      "fc": 3,
+      "id": 113,
+      "k": "dP2",
+      "l": "Maximum defrost duration auxiliary evaporator",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 3,
+      "fc": 3,
+      "id": 114,
+      "k": "dt1",
+      "l": "End defrost temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 5,
+      "fc": 3,
+      "id": 115,
+      "k": "dt2",
+      "l": "End defrost temperature axiliary evap.",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 17,
+      "fc": 2,
+      "id": 116,
+      "k": "E1",
+      "l": "Probe 1 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 2,
+      "id": 117,
+      "k": "E2",
+      "l": "Probe 2 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 19,
+      "fc": 2,
+      "id": 118,
+      "k": "E3",
+      "l": "Probe 3 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 2,
+      "id": 119,
+      "k": "E4",
+      "l": "Probe 4 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 21,
+      "fc": 2,
+      "id": 120,
+      "k": "E5",
+      "l": "Probe 5 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 80,
+      "fc": 2,
+      "id": 121,
+      "k": "E6",
+      "l": "Probe 6 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 81,
+      "fc": 2,
+      "id": 122,
+      "k": "E7",
+      "l": "Probe 7 alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 29,
+      "fc": 2,
+      "id": 123,
+      "k": "Ed1",
+      "l": "Warning for timeout of defrost 1",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 30,
+      "fc": 2,
+      "id": 124,
+      "k": "Ed2",
+      "l": "Warning for timeout of defrost 2",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 33,
+      "fc": 2,
+      "id": 125,
+      "k": "EHI",
+      "l": "High voltage detection",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 68,
+      "fc": 2,
+      "id": 126,
+      "k": "ELO",
+      "l": "Low voltage detection",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 24,
+      "fc": 2,
+      "id": 127,
+      "k": "Etc",
+      "l": "Clock error",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 187,
+      "fc": 3,
+      "id": 128,
+      "k": "F0",
+      "l": "Evaporator fan management",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 189,
+      "fc": 3,
+      "id": 129,
+      "k": "F00",
+      "l": "Condenser fan management",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 56,
+      "fc": 3,
+      "id": 130,
+      "k": "F1",
+      "l": "Fan activation temperature",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 188,
+      "fc": 3,
+      "id": 131,
+      "k": "F2",
+      "l": "Fan with compressor off",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 1,
+      "id": 132,
+      "k": "F3",
+      "l": "Evaporators fan during defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 98,
+      "fc": 3,
+      "id": 133,
+      "k": "F4",
+      "l": "Condenser fan deactivation temperature",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 100,
+      "fc": 3,
+      "id": 134,
+      "k": "F5",
+      "l": "Evaporator fans cut-off temperature",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 102,
+      "fc": 3,
+      "id": 135,
+      "k": "F5d",
+      "l": "Condenser fan activation differential",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 4,
+      "id": 136,
+      "k": "FAA",
+      "l": "Evaporator Fan",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 4,
+      "id": 137,
+      "k": "FAc",
+      "l": "Rails",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 12,
+      "fc": 4,
+      "id": 138,
+      "k": "FAd",
+      "l": "Generic modulation 1",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 10,
+      "fc": 4,
+      "id": 139,
+      "k": "FAE",
+      "l": "Condenser Fan",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 4,
+      "id": 140,
+      "k": "FAF",
+      "l": "Light",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 9,
+      "fc": 4,
+      "id": 141,
+      "k": "FAG",
+      "l": "Compressor",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 41,
+      "fc": 3,
+      "id": 142,
+      "k": "Fd",
+      "l": "Post dripping time",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 35,
+      "fc": 2,
+      "id": 143,
+      "k": "FIA",
+      "l": "Immediate external alarm",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 41,
+      "fc": 2,
+      "id": 144,
+      "k": "FIb",
+      "l": "Delayed external alarm",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 44,
+      "fc": 2,
+      "id": 145,
+      "k": "FIc",
+      "l": "Enable defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 37,
+      "fc": 2,
+      "id": 146,
+      "k": "FId",
+      "l": "Call defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 42,
+      "fc": 2,
+      "id": 147,
+      "k": "FIE",
+      "l": "Door status - Regulation OFF",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 46,
+      "fc": 2,
+      "id": 148,
+      "k": "FIF",
+      "l": "Remote ON/OFF",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 40,
+      "fc": 2,
+      "id": 149,
+      "k": "FIG",
+      "l": "Curtain switch",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 39,
+      "fc": 2,
+      "id": 150,
+      "k": "FIH",
+      "l": "Continuous cycle start/stop",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 38,
+      "fc": 2,
+      "id": 151,
+      "k": "FIo",
+      "l": "Change configuration",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 43,
+      "fc": 2,
+      "id": 152,
+      "k": "FIP",
+      "l": "Door status - Regulation ON",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 45,
+      "fc": 2,
+      "id": 153,
+      "k": "FIS",
+      "l": "Digital input for generic function alarm",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 47,
+      "fc": 2,
+      "id": 154,
+      "k": "FIt",
+      "l": "Low pressure switch",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 36,
+      "fc": 2,
+      "id": 155,
+      "k": "FIU",
+      "l": "Auxiliary digital input",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 67,
+      "fc": 2,
+      "id": 156,
+      "k": "FOA",
+      "l": "Solenoid/Compressor",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 48,
+      "fc": 2,
+      "id": 157,
+      "k": "FOb",
+      "l": "Alarm",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 49,
+      "fc": 2,
+      "id": 158,
+      "k": "FOc",
+      "l": "Auxiliary",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 63,
+      "fc": 2,
+      "id": 159,
+      "k": "FOE",
+      "l": "Light",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 53,
+      "fc": 2,
+      "id": 160,
+      "k": "FOG",
+      "l": "Defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 54,
+      "fc": 2,
+      "id": 161,
+      "k": "FOH",
+      "l": "Auxiliary defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 59,
+      "fc": 2,
+      "id": 162,
+      "k": "FOI",
+      "l": "Evaporator Fan",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 56,
+      "fc": 2,
+      "id": 163,
+      "k": "FOj",
+      "l": "Dehumidification heaters",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 51,
+      "fc": 2,
+      "id": 164,
+      "k": "FOk",
+      "l": "Auxiliary compressor without rotation",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 82,
+      "fc": 2,
+      "id": 165,
+      "k": "FOn",
+      "l": "Liquid Valve",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 58,
+      "fc": 2,
+      "id": 166,
+      "k": "FOP",
+      "l": "Drain heaters",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 65,
+      "fc": 2,
+      "id": 167,
+      "k": "FOq",
+      "l": "Rail heaters",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 60,
+      "fc": 2,
+      "id": 168,
+      "k": "FOs",
+      "l": "Generic stage 1",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 52,
+      "fc": 2,
+      "id": 169,
+      "k": "FOt",
+      "l": "Condenser fan",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 62,
+      "fc": 2,
+      "id": 170,
+      "k": "FOu",
+      "l": "Humidification",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 66,
+      "fc": 2,
+      "id": 171,
+      "k": "FOv",
+      "l": "Auxiliary reverse with neutral zone",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 57,
+      "fc": 2,
+      "id": 172,
+      "k": "FOw",
+      "l": "Auxiliary parallel compressor",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 61,
+      "fc": 2,
+      "id": 173,
+      "k": "FOx",
+      "l": "Gasket heater",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 50,
+      "fc": 2,
+      "id": 174,
+      "k": "FOy",
+      "l": "Auxiliary compressor with rotation",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 55,
+      "fc": 2,
+      "id": 175,
+      "k": "FOz",
+      "l": "External dehumidifier",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 4,
+      "fc": 1,
+      "id": 176,
+      "k": "Fpd",
+      "l": "Evaporators fans during post-dripping",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 104,
+      "fc": 3,
+      "id": 177,
+      "k": "Frd",
+      "l": "Fan activation differential",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 229,
+      "fc": 3,
+      "id": 178,
+      "k": "GFA_De",
+      "l": "General alarm function: delay",
+      "t": "u16",
+      "u": 22,
+      "w": 1
+    },
+    {
+      "a": 234,
+      "fc": 3,
+      "id": 179,
+      "k": "GFA_E",
+      "l": "Generic alarm function: enable",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 230,
+      "fc": 3,
+      "id": 180,
+      "k": "GFA_Hth",
+      "l": "Generic alarm function: high threshold",
+      "t": "f32",
+      "w": 1
+    },
+    {
+      "a": 232,
+      "fc": 3,
+      "id": 181,
+      "k": "GFA_Lth",
+      "l": "Generic alarm function: low threshold",
+      "t": "f32",
+      "w": 1
+    },
+    {
+      "a": 237,
+      "fc": 3,
+      "id": 182,
+      "k": "GFS_1",
+      "l": "On/Off generic function: control probe 1",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 238,
+      "fc": 3,
+      "id": 183,
+      "k": "GFS_2",
+      "l": "On/Off generic function: control probe 2",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 235,
+      "fc": 3,
+      "id": 184,
+      "k": "GFS_D",
+      "l": "GenericStages.Diff",
+      "t": "f32",
+      "w": 1
+    },
+    {
+      "a": 241,
+      "fc": 3,
+      "id": 185,
+      "k": "GFS_E",
+      "l": "On/Off generic function: enable",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 239,
+      "fc": 3,
+      "id": 186,
+      "k": "GFS_S",
+      "l": "On/Off generic function: set point",
+      "t": "f32",
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 1,
+      "id": 187,
+      "k": "GFS_T",
+      "l": "On/Off generic function: type (0/1 = Direct/Reverse)",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 5,
+      "fc": 2,
+      "id": 188,
+      "k": "GHI",
+      "l": "Generic alarm 1 high",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 6,
+      "fc": 2,
+      "id": 189,
+      "k": "GLO",
+      "l": "Generic alarm 1 low",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 190,
+      "fc": 3,
+      "id": 190,
+      "k": "H8",
+      "l": "Output switched with scheduler",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 7,
+      "fc": 2,
+      "id": 191,
+      "k": "HA",
+      "l": "Type HA HACCP alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 49,
+      "fc": 3,
+      "id": 192,
+      "k": "HAn",
+      "l": "HACCP number of HA alarm type recorded",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 2,
+      "id": 193,
+      "k": "HF",
+      "l": "Type HF HACCP alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 60,
+      "fc": 3,
+      "id": 194,
+      "k": "HFn",
+      "l": "HACCP number of HF alarm type recorded",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 9,
+      "fc": 2,
+      "id": 195,
+      "k": "HI",
+      "l": "High temperature alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 38,
+      "fc": 3,
+      "id": 196,
+      "k": "Htd",
+      "l": "HACCP Alarm delay, 0 = Monitoring disabled",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 28,
+      "fc": 2,
+      "id": 197,
+      "k": "IA",
+      "l": "Immediate alarm from external contact",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 2,
+      "id": 198,
+      "k": "IOC",
+      "l": "IO configuration alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 10,
+      "fc": 1,
+      "id": 199,
+      "k": "Lht",
+      "l": "Light",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 2,
+      "id": 200,
+      "k": "LO",
+      "l": "Low temperature alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 12,
+      "fc": 2,
+      "id": 201,
+      "k": "LP",
+      "l": "Low pressure alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 79,
+      "fc": 2,
+      "id": 202,
+      "k": "MAn",
+      "l": "Manual mode active",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 31,
+      "fc": 4,
+      "id": 203,
+      "k": "MiskVars.SwVer",
+      "l": "Software version",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 0,
+      "fc": 1,
+      "id": 204,
+      "k": "On",
+      "l": "On-off command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 69,
+      "fc": 2,
+      "id": 205,
+      "k": "PAL",
+      "l": "Probe alarms",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 15,
+      "fc": 2,
+      "id": 206,
+      "k": "PD",
+      "l": "Alarm maximum pump down time",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 43,
+      "fc": 3,
+      "id": 207,
+      "k": "r1",
+      "l": "Minimum temperature setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 42,
+      "fc": 3,
+      "id": 208,
+      "k": "r2",
+      "l": "Maximum temperature setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 76,
+      "fc": 3,
+      "id": 209,
+      "k": "r4",
+      "l": "Automatic night-time set point variation",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 86,
+      "fc": 3,
+      "id": 210,
+      "k": "r4d",
+      "l": "Night temperature regulation differential",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 7,
+      "fc": 1,
+      "id": 211,
+      "k": "rAL",
+      "l": "Reset alarm history",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 46,
+      "fc": 3,
+      "id": 212,
+      "k": "rd",
+      "l": "Regulation temperature differential",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 51,
+      "fc": 3,
+      "id": 213,
+      "k": "rdh",
+      "l": "Humidity differential",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 22,
+      "fc": 2,
+      "id": 214,
+      "k": "rE",
+      "l": "Control probe fault",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 9,
+      "fc": 1,
+      "id": 215,
+      "k": "rHP",
+      "l": "reset HACCP history",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 44,
+      "fc": 3,
+      "id": 216,
+      "k": "rn",
+      "l": "Neutral zone",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 52,
+      "fc": 3,
+      "id": 217,
+      "k": "rnH",
+      "l": "Humidity dead band",
+      "s": 0.1,
+      "t": "i16",
+      "u": 3,
+      "w": 1
+    },
+    {
+      "a": 108,
+      "fc": 3,
+      "id": 218,
+      "k": "ro",
+      "l": "Control offset with probe error",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 45,
+      "fc": 3,
+      "id": 219,
+      "k": "rr",
+      "l": "Reverse differential temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 53,
+      "fc": 3,
+      "id": 220,
+      "k": "rrH",
+      "l": "Dehumidification differential",
+      "s": 0.1,
+      "t": "i16",
+      "u": 3,
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 1,
+      "id": 221,
+      "k": "rSA",
+      "l": "Alarms reset",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 1,
+      "fc": 1,
+      "id": 222,
+      "k": "rSC",
+      "l": "Restore to Carel settings",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 23,
+      "fc": 2,
+      "id": 223,
+      "k": "rsF",
+      "l": "Refrigerant System Failure Alarm",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 77,
+      "fc": 3,
+      "id": 224,
+      "k": "RTC_Vars.SPV_Day",
+      "l": "Current day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 78,
+      "fc": 3,
+      "id": 225,
+      "k": "RTC_Vars.SPV_Hour",
+      "l": "Current hour",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 79,
+      "fc": 3,
+      "id": 226,
+      "k": "RTC_Vars.SPV_Min",
+      "l": "Current minute",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 80,
+      "fc": 3,
+      "id": 227,
+      "k": "RTC_Vars.SPV_Month",
+      "l": "Current month",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 81,
+      "fc": 3,
+      "id": 228,
+      "k": "RTC_Vars.SPV_Year",
+      "l": "Current year",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 19,
+      "fc": 4,
+      "id": 229,
+      "k": "SA",
+      "l": "Ambient temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 22,
+      "fc": 4,
+      "id": 230,
+      "k": "Sc",
+      "l": "Condenser temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 23,
+      "fc": 4,
+      "id": 231,
+      "k": "Sd",
+      "l": "Defrost temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 24,
+      "fc": 4,
+      "id": 232,
+      "k": "Sd2",
+      "l": "Auxiliary defrost temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 25,
+      "fc": 2,
+      "id": 233,
+      "k": "SF",
+      "l": "Timeout for safe mode",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 25,
+      "fc": 4,
+      "id": 234,
+      "k": "SFr",
+      "l": "Antifreeze temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 27,
+      "fc": 4,
+      "id": 235,
+      "k": "SHu",
+      "l": "Humidity",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 17,
+      "fc": 4,
+      "id": 236,
+      "k": "Sm",
+      "l": "Outlet temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 28,
+      "fc": 4,
+      "id": 237,
+      "k": "SPr",
+      "l": "Product temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 4,
+      "id": 238,
+      "k": "Sr",
+      "l": "Intake temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 2,
+      "id": 239,
+      "k": "SrC",
+      "l": "Maintenance request",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 47,
+      "fc": 3,
+      "id": 240,
+      "k": "St",
+      "l": "Regulation temperature setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 32,
+      "fc": 2,
+      "id": 241,
+      "k": "Stb",
+      "l": "Warning for Standby status",
+      "t": "alm",
+      "w": 1
+    },
+    {
+      "a": 54,
+      "fc": 3,
+      "id": 242,
+      "k": "Sth",
+      "l": "Humidity setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 4,
+      "id": 243,
+      "k": "Sv",
+      "l": "Virtual probe",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 26,
+      "fc": 4,
+      "id": 244,
+      "k": "Svt",
+      "l": "Glass temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 10,
+      "fc": 3,
+      "id": 245,
+      "k": "td1-d",
+      "l": "Time band 1 - day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 3,
+      "id": 246,
+      "k": "td1-hh",
+      "l": "Time band 1 - hour",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 12,
+      "fc": 3,
+      "id": 247,
+      "k": "td1-mm",
+      "l": "Time band 1 - minute",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 3,
+      "id": 248,
+      "k": "td2-d",
+      "l": "Time band 2 - day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 3,
+      "id": 249,
+      "k": "td2-hh",
+      "l": "Time band 2 - hour",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 15,
+      "fc": 3,
+      "id": 250,
+      "k": "td2-mm",
+      "l": "Time band 2 - minute",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 16,
+      "fc": 3,
+      "id": 251,
+      "k": "td3-d",
+      "l": "Time band 3 - day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 17,
+      "fc": 3,
+      "id": 252,
+      "k": "td3-hh",
+      "l": "Time band 3 - hour",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 3,
+      "id": 253,
+      "k": "td3-mm",
+      "l": "Time band 3 - minute",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 55,
+      "fc": 3,
+      "id": 254,
+      "k": "TdL",
+      "l": "Temperature differential to enable humidity control",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 50,
+      "fc": 3,
+      "id": 255,
+      "k": "tE1-d",
+      "l": "End time band 1 - day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 58,
+      "fc": 3,
+      "id": 256,
+      "k": "tE1-hh",
+      "l": "End time band 1 - hour",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 61,
+      "fc": 3,
+      "id": 257,
+      "k": "tE1-mm",
+      "l": "End time band 1 - minute",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 176,
+      "fc": 3,
+      "id": 258,
+      "k": "THL",
+      "l": "Maximum temperature to enable humidity control",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 178,
+      "fc": 3,
+      "id": 259,
+      "k": "TLL",
+      "l": "Minimum temperature to enable humidity control",
+      "t": "f32",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 136,
+      "fc": 3,
+      "id": 260,
+      "k": "tS1-d",
+      "l": "Start time band 1 - day",
+      "t": "u16",
+      "w": 1
+    },
+    {
+      "a": 137,
+      "fc": 3,
+      "id": 261,
+      "k": "tS1-hh",
+      "l": "Start time band 1 - hour",
+      "t": "u16",
+      "u": 24,
+      "w": 1
+    },
+    {
+      "a": 138,
+      "fc": 3,
+      "id": 262,
+      "k": "tS1-mm",
+      "l": "Start time band 1 - minute",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 21,
+      "fc": 3,
+      "id": 263,
+      "k": "H14",
+      "l": "Time light stays on after closing the door",
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 3,
+      "id": 264,
+      "k": "DIU",
+      "l": "Assign AUX output activation digital input",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 19,
+      "fc": 3,
+      "id": 265,
+      "k": "DIt",
+      "l": "Assign low pressure switch digital input",
+      "t": "i16",
+      "w": 1
+    }
+  ],
+  "schema": 2,
+  "vendor": "carel"
+}
