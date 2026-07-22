@@ -2,6 +2,16 @@
   "profiles": [
     {
       "deviceClass": "refrigeration-controller",
+      "family": "pjeasy",
+      "model": "pjeasy",
+      "profileId": "carel-carel-pjeasy-v1.0.0",
+      "protocol": "carel",
+      "regs": 113,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/carel-protocol/pjeasy/carel-carel-pjeasy-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
       "family": "ij",
       "model": "iJF",
       "profileId": "carel-modbus-ijf-v1.0.0",

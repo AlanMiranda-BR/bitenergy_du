@@ -1,0 +1,1066 @@
+{
+  "bus": {
+    "baud": 19200,
+    "bits": 8,
+    "endian": "L",
+    "parity": "N",
+    "stop": 2
+  },
+  "deviceClass": "refrigeration-controller",
+  "family": "pjeasy",
+  "model": "pjeasy",
+  "profileId": "carel-carel-pjeasy-v1.0.0",
+  "protocol": "carel",
+  "quirks": {
+    "addrFmt": "asciiChar"
+  },
+  "regs": [
+    {
+      "a": 27,
+      "fc": 2,
+      "id": 1,
+      "k": "ALARM_COND_DELAY",
+      "l": "Dirty cond. alarm delay",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 1,
+      "id": 2,
+      "k": "ALARM_COND_DIFF",
+      "l": "Dirty cond. alarm temp. diff.",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 17,
+      "fc": 1,
+      "id": 3,
+      "k": "ALARM_COND_SET",
+      "l": "Dirty cond. alarm set point",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 32,
+      "fc": 3,
+      "id": 4,
+      "k": "ALARM_DEFR_ENABLE",
+      "l": "Enable alarm Ed (end defrost by timeout)",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 26,
+      "fc": 2,
+      "id": 5,
+      "k": "ALARM_EXT_RITARDO",
+      "l": "Digital input alarm delay",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 24,
+      "fc": 2,
+      "id": 6,
+      "k": "ALARM_TEMP_DELAY",
+      "l": "Temperature alarm delay",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 1,
+      "id": 7,
+      "k": "ALARM_TEMP_DIFF",
+      "l": "Alarms and fan differential",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 16,
+      "fc": 1,
+      "id": 8,
+      "k": "ALARM_TEMP_SET_H",
+      "l": "High temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 15,
+      "fc": 1,
+      "id": 9,
+      "k": "ALARM_TEMP_SET_L",
+      "l": "Low temperature alarm threshold",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 36,
+      "fc": 3,
+      "id": 10,
+      "k": "BUZZER_DISABLE",
+      "l": "Disable buzzer",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 16,
+      "fc": 2,
+      "id": 11,
+      "k": "CC_DURATA",
+      "l": "Continuous cycle duration",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 17,
+      "fc": 2,
+      "id": 12,
+      "k": "CC_ESCL_ALM",
+      "l": "Temperature alarm bypass after c.c.",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 32,
+      "fc": 2,
+      "id": 13,
+      "k": "CODE_MODIF_PARAM",
+      "l": "ID code (read-only)",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 38,
+      "fc": 3,
+      "id": 14,
+      "k": "COMANDO_ON_OFF",
+      "l": "Unit ON/OFF command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 2,
+      "id": 15,
+      "k": "COMP_FAN_RITARDO_START",
+      "l": "Start delay after power-on",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 2,
+      "id": 16,
+      "k": "COMP_TEMPO_MINIMO_DI_OFF",
+      "l": "Minimum compressor OFF time",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 14,
+      "fc": 2,
+      "id": 17,
+      "k": "COMP_TEMPO_MINIMO_DI_ON",
+      "l": "Minimum compressor ON time",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 12,
+      "fc": 2,
+      "id": 18,
+      "k": "COMP_TEMPO_MINIMO_TRA_START",
+      "l": "Delay between 2 consecutive starts",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 31,
+      "fc": 3,
+      "id": 19,
+      "k": "DEFR_BASE_TEMPI",
+      "l": "Time base",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 29,
+      "fc": 3,
+      "id": 20,
+      "k": "DEFR_BLOCCO_DISPLAY",
+      "l": "Display of control temperature frozen during defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 2,
+      "id": 21,
+      "k": "DEFR_DURATA_MAX",
+      "l": "Maximum defrost duration",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 23,
+      "fc": 2,
+      "id": 22,
+      "k": "DEFR_ESCL_ALM_DOPO",
+      "l": "Alarm bypass time after defrost",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 22,
+      "fc": 2,
+      "id": 23,
+      "k": "DEFR_GOCC_DURATA",
+      "l": "Dripping time",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 19,
+      "fc": 2,
+      "id": 24,
+      "k": "DEFR_INTERVALLO",
+      "l": "Interval between defrosts",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 30,
+      "fc": 3,
+      "id": 25,
+      "k": "DEFR_PRIORITA_SU_COMP",
+      "l": "Defrost priority over compressor protectors",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 1,
+      "fc": 1,
+      "id": 26,
+      "k": "DEFR_SONDA",
+      "l": "Defrost probe value",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 28,
+      "fc": 3,
+      "id": 27,
+      "k": "DEFR_STARTUP",
+      "l": "Defrost at instrument power-on",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 21,
+      "fc": 2,
+      "id": 28,
+      "k": "DEFR_STARTUP_RITARDO",
+      "l": "Defrost delay from power-on or when enabled by digital input",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 13,
+      "fc": 1,
+      "id": 29,
+      "k": "DEFR_TEMPERATURA_FINE",
+      "l": "End defrost temperature set point",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 18,
+      "fc": 2,
+      "id": 30,
+      "k": "DEFR_TIPO",
+      "l": "Type of defrost",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 25,
+      "fc": 2,
+      "id": 31,
+      "k": "DIGIN_CONFIG",
+      "l": "3rd input conf.",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 27,
+      "fc": 3,
+      "id": 32,
+      "k": "DISABILITA_PUNTO_DECIMALE",
+      "l": "Disable decimal point",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 15,
+      "fc": 2,
+      "id": 33,
+      "k": "DUTY_SETTING_DURATA",
+      "l": "Duty setting time",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 33,
+      "fc": 2,
+      "id": 34,
+      "k": "EZY_BANK",
+      "l": "Select set of default parameters",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 34,
+      "fc": 3,
+      "id": 35,
+      "k": "FAN_OFF_COMP_OFF",
+      "l": "Stop evaporator fans if compressor stops",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 28,
+      "fc": 2,
+      "id": 36,
+      "k": "FAN_OFF_POST_GOCC",
+      "l": "Post-dripping timeout",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 33,
+      "fc": 3,
+      "id": 37,
+      "k": "FAN_REG_ENABLE",
+      "l": "Enable evaporator fan control",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 19,
+      "fc": 1,
+      "id": 38,
+      "k": "FAN_REG_SET_POINT",
+      "l": "Evaporator fan control set point",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 35,
+      "fc": 3,
+      "id": 39,
+      "k": "FAN_STATUS_IN_DEFROST",
+      "l": "Stop evaporator fans during defrost",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 55,
+      "fc": 2,
+      "id": 40,
+      "k": "FASCIA_ORARIA_AUX_OFF_DAY",
+      "l": "AUX time band OFF day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 56,
+      "fc": 2,
+      "id": 41,
+      "k": "FASCIA_ORARIA_AUX_OFF_HOUR",
+      "l": "AUX time band OFF hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 57,
+      "fc": 2,
+      "id": 42,
+      "k": "FASCIA_ORARIA_AUX_OFF_MINUTE",
+      "l": "AUX time band OFF minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 52,
+      "fc": 2,
+      "id": 43,
+      "k": "FASCIA_ORARIA_AUX_ON_DAY",
+      "l": "AUX time band ON day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 53,
+      "fc": 2,
+      "id": 44,
+      "k": "FASCIA_ORARIA_AUX_ON_HOUR",
+      "l": "AUX time band ON hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 54,
+      "fc": 2,
+      "id": 45,
+      "k": "FASCIA_ORARIA_AUX_ON_MINUTE",
+      "l": "AUX time band ON minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 34,
+      "fc": 2,
+      "id": 46,
+      "k": "FASCIA_ORARIA_DEFR1_DAY",
+      "l": "Defrost time band 1st day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 35,
+      "fc": 2,
+      "id": 47,
+      "k": "FASCIA_ORARIA_DEFR1_HOUR",
+      "l": "Time band 1st hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 36,
+      "fc": 2,
+      "id": 48,
+      "k": "FASCIA_ORARIA_DEFR1_MINUTE",
+      "l": "Time band 1st minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 37,
+      "fc": 2,
+      "id": 49,
+      "k": "FASCIA_ORARIA_DEFR2_DAY",
+      "l": "Defrost time band 2nd day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 38,
+      "fc": 2,
+      "id": 50,
+      "k": "FASCIA_ORARIA_DEFR2_HOUR",
+      "l": "Time band 2nd hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 39,
+      "fc": 2,
+      "id": 51,
+      "k": "FASCIA_ORARIA_DEFR2_MINUTE",
+      "l": "Time band 2nd minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 40,
+      "fc": 2,
+      "id": 52,
+      "k": "FASCIA_ORARIA_DEFR3_DAY",
+      "l": "Defrost time band 3rd day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 41,
+      "fc": 2,
+      "id": 53,
+      "k": "FASCIA_ORARIA_DEFR3_HOUR",
+      "l": "Time band 3rd hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 42,
+      "fc": 2,
+      "id": 54,
+      "k": "FASCIA_ORARIA_DEFR3_MINUTE",
+      "l": "Time band 3rd minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 43,
+      "fc": 2,
+      "id": 55,
+      "k": "FASCIA_ORARIA_DEFR4_DAY",
+      "l": "Defrost time band 4th day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 44,
+      "fc": 2,
+      "id": 56,
+      "k": "FASCIA_ORARIA_DEFR4_HOUR",
+      "l": "Time band 4th hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 45,
+      "fc": 2,
+      "id": 57,
+      "k": "FASCIA_ORARIA_DEFR4_MINUTE",
+      "l": "Time band 4th minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 49,
+      "fc": 2,
+      "id": 58,
+      "k": "FASCIA_ORARIA_NIGHT_OFF_DAY",
+      "l": "Night time band OFF day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 50,
+      "fc": 2,
+      "id": 59,
+      "k": "FASCIA_ORARIA_NIGHT_OFF_HOUR",
+      "l": "Night time band OFF hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 51,
+      "fc": 2,
+      "id": 60,
+      "k": "FASCIA_ORARIA_NIGHT_OFF_MINUTE",
+      "l": "Night time band OFF minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 46,
+      "fc": 2,
+      "id": 61,
+      "k": "FASCIA_ORARIA_NIGHT_ON_DAY",
+      "l": "Night time band ON day",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 47,
+      "fc": 2,
+      "id": 62,
+      "k": "FASCIA_ORARIA_NIGHT_ON_HOUR",
+      "l": "Night time band ON hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 48,
+      "fc": 2,
+      "id": 63,
+      "k": "FASCIA_ORARIA_NIGHT_ON_MINUTE",
+      "l": "Night time band ON minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 31,
+      "fc": 2,
+      "id": 64,
+      "k": "KEYBOARD_ENABLE",
+      "l": "Enable keypad",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 5,
+      "fc": 2,
+      "id": 65,
+      "k": "MODELLO_MACCHINA",
+      "l": "Machine model",
+      "t": "i16"
+    },
+    {
+      "a": 30,
+      "fc": 2,
+      "id": 66,
+      "k": "OUT_AUX_CONFIG",
+      "l": "AUX output configuration",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 4,
+      "fc": 2,
+      "id": 67,
+      "k": "PRESENZA_RTC",
+      "l": "RTC presence",
+      "t": "i16"
+    },
+    {
+      "a": 12,
+      "fc": 1,
+      "id": 68,
+      "k": "REG_DELTA_SET_NOTTE",
+      "l": "Night-time set point delta",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 9,
+      "fc": 1,
+      "id": 69,
+      "k": "REG_DIFFERENZIALE",
+      "l": "Working temperature differential",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 10,
+      "fc": 2,
+      "id": 70,
+      "k": "REG_DIRECT_REVERSE",
+      "l": "Direct/reverse",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 11,
+      "fc": 1,
+      "id": 71,
+      "k": "REG_SET_MAX",
+      "l": "Maximum set point allowed",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 10,
+      "fc": 1,
+      "id": 72,
+      "k": "REG_SET_MIN",
+      "l": "Minimum set point allowed",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 1,
+      "id": 73,
+      "k": "REG_SET_POINT",
+      "l": "Temperature setpoint",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 37,
+      "fc": 3,
+      "id": 74,
+      "k": "RTC_ENABLE",
+      "l": "Enable RTC",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 1,
+      "fc": 2,
+      "id": 75,
+      "k": "RTC_GIORNO_SETTIM",
+      "l": "RTC day of the week",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 3,
+      "fc": 2,
+      "id": 76,
+      "k": "RTC_MINUTO",
+      "l": "RTC minutes",
+      "t": "i16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 2,
+      "fc": 2,
+      "id": 77,
+      "k": "RTC_ORA",
+      "l": "RTC hour",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 29,
+      "fc": 2,
+      "id": 78,
+      "k": "SERIAL_ADDRESS",
+      "l": "Serial address",
+      "t": "i16"
+    },
+    {
+      "a": 5,
+      "fc": 1,
+      "id": 79,
+      "k": "SONDE_OFFSET_SONDA_1",
+      "l": "Probe 1 offset",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 6,
+      "fc": 1,
+      "id": 80,
+      "k": "SONDE_OFFSET_SONDA_2",
+      "l": "Probe 2 offset",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 7,
+      "fc": 1,
+      "id": 81,
+      "k": "SONDE_OFFSET_SONDA_3",
+      "l": "Probe 3 offset",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 26,
+      "fc": 3,
+      "id": 82,
+      "k": "SONDE_SELEZ_C_F",
+      "l": "Select C/F",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 8,
+      "fc": 2,
+      "id": 83,
+      "k": "SONDE_STABILITA_MISURA",
+      "l": "Probe measurement stability",
+      "t": "i16",
+      "w": 1
+    },
+    {
+      "a": 25,
+      "fc": 4,
+      "id": 84,
+      "k": "S_ALARM_PORTA_APERTA",
+      "l": "Open door alarm status",
+      "t": "alm"
+    },
+    {
+      "a": 10,
+      "fc": 4,
+      "id": 85,
+      "k": "S_ALM_ALTA_TEMP",
+      "l": "High temperature alarm",
+      "t": "alm"
+    },
+    {
+      "a": 15,
+      "fc": 4,
+      "id": 86,
+      "k": "S_ALM_ALTA_TEMP_COND",
+      "l": "High temperature condenser alarm",
+      "t": "alm"
+    },
+    {
+      "a": 9,
+      "fc": 4,
+      "id": 87,
+      "k": "S_ALM_BASSA_TEMP",
+      "l": "Low temperature alarm",
+      "t": "alm"
+    },
+    {
+      "a": 18,
+      "fc": 4,
+      "id": 88,
+      "k": "S_ALM_EEPROM_PAR_FUNZ",
+      "l": "Functions parameters eeprom alarm",
+      "t": "alm"
+    },
+    {
+      "a": 17,
+      "fc": 4,
+      "id": 89,
+      "k": "S_ALM_EEPROM_PAR_MACC",
+      "l": "Machine parameters eeprom alarm",
+      "t": "alm"
+    },
+    {
+      "a": 11,
+      "fc": 4,
+      "id": 90,
+      "k": "S_ALM_IMMEDIATO_ESTERNO",
+      "l": "External immediate alarm",
+      "t": "alm"
+    },
+    {
+      "a": 14,
+      "fc": 4,
+      "id": 91,
+      "k": "S_ALM_PRE_ALTA_TEMP_COND",
+      "l": "High temperature condenser pre-alarm",
+      "t": "alm"
+    },
+    {
+      "a": 12,
+      "fc": 4,
+      "id": 92,
+      "k": "S_ALM_RITARDATO_ESTERNO",
+      "l": "External delay alarm",
+      "t": "alm"
+    },
+    {
+      "a": 16,
+      "fc": 4,
+      "id": 93,
+      "k": "S_ALM_RTC_GUASTO",
+      "l": "Broken RTC alarm",
+      "t": "alm"
+    },
+    {
+      "a": 6,
+      "fc": 4,
+      "id": 94,
+      "k": "S_ALM_SONDA_1",
+      "l": "Probe 1 alarm",
+      "t": "alm"
+    },
+    {
+      "a": 7,
+      "fc": 4,
+      "id": 95,
+      "k": "S_ALM_SONDA_2",
+      "l": "Probe 2 alarm",
+      "t": "alm"
+    },
+    {
+      "a": 8,
+      "fc": 4,
+      "id": 96,
+      "k": "S_ALM_SONDA_3",
+      "l": "Probe 3 alarm",
+      "t": "alm"
+    },
+    {
+      "a": 13,
+      "fc": 4,
+      "id": 97,
+      "k": "S_ALM_TIMEOUT_DEFROST",
+      "l": "Timeout defrost alarm",
+      "t": "alm"
+    },
+    {
+      "a": 22,
+      "fc": 3,
+      "id": 98,
+      "k": "S_COMANDO_CICLO_CONTINUO",
+      "l": "Continuous cycle command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 20,
+      "fc": 3,
+      "id": 99,
+      "k": "S_COMANDO_DEFROST",
+      "l": "Defrost command",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 1,
+      "fc": 3,
+      "id": 100,
+      "k": "S_DIGIN",
+      "l": "Digital input status",
+      "t": "bit"
+    },
+    {
+      "a": 24,
+      "fc": 4,
+      "id": 101,
+      "k": "S_PRE_ALARM_PORTA_APERTA",
+      "l": "Open door pre-alarm status",
+      "t": "alm"
+    },
+    {
+      "a": 5,
+      "fc": 3,
+      "id": 102,
+      "k": "S_RELE_AUX",
+      "l": "AUX relay status",
+      "t": "bit"
+    },
+    {
+      "a": 2,
+      "fc": 3,
+      "id": 103,
+      "k": "S_RELE_COMP",
+      "l": "Compressor relay status",
+      "t": "bit"
+    },
+    {
+      "a": 3,
+      "fc": 3,
+      "id": 104,
+      "k": "S_RELE_DEFR",
+      "l": "Defrost relay status",
+      "t": "bit"
+    },
+    {
+      "a": 4,
+      "fc": 3,
+      "id": 105,
+      "k": "S_RELE_FAN",
+      "l": "Fan relay status",
+      "t": "bit"
+    },
+    {
+      "a": 23,
+      "fc": 3,
+      "id": 106,
+      "k": "S_SET_NIGHT_RTC",
+      "l": "Set point started by RTC",
+      "t": "bit"
+    },
+    {
+      "a": 2,
+      "fc": 1,
+      "id": 107,
+      "k": "S_SONDA_1",
+      "l": "Regulation temperature",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 3,
+      "fc": 1,
+      "id": 108,
+      "k": "S_SONDA_2",
+      "l": "Probe 2 value",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 4,
+      "fc": 1,
+      "id": 109,
+      "k": "S_SONDA_3",
+      "l": "Probe 3 value",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 21,
+      "fc": 3,
+      "id": 110,
+      "k": "S_STATO_CICLO_CONTINUO",
+      "l": "Continuous cycle status",
+      "t": "bit"
+    },
+    {
+      "a": 19,
+      "fc": 3,
+      "id": 111,
+      "k": "S_STATO_DEFROST",
+      "l": "Defrost status",
+      "t": "bit"
+    },
+    {
+      "a": 6,
+      "fc": 2,
+      "id": 112,
+      "k": "TIPO_SONDE",
+      "l": "Probe type NTC/PTC",
+      "t": "i16"
+    },
+    {
+      "a": 9,
+      "fc": 2,
+      "id": 113,
+      "k": "VIS_SONDA_SELEZ",
+      "l": "Select display probe",
+      "t": "i16",
+      "w": 1
+    }
+  ],
+  "schema": 2,
+  "vendor": "carel"
+}

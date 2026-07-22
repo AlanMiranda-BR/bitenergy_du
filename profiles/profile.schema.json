@@ -95,7 +95,7 @@
         "additionalProperties": false,
         "properties": {
           "id":  { "type": "integer", "minimum": 1, "maximum": 65535 },
-          "k":   { "type": "string", "pattern": "^[A-Za-z0-9_/.\\-~]+$", "minLength": 1, "maxLength": 24 },
+          "k":   { "type": "string", "pattern": "^[A-Za-z0-9_/.\\-~]+$", "minLength": 1, "maxLength": 32 },
           "a":   { "type": "integer", "minimum": 0, "maximum": 65535 },
           "fc":  { "type": "integer", "minimum": 1, "maximum": 6 },
           "t":   { "enum": ["bit", "u8", "i8", "u16", "i16", "u32", "i32", "f32", "alm"] },
