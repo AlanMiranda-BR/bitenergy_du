@@ -17,7 +17,9 @@
   "regs": [
     {
       "a": 27,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 1,
       "k": "ALARM_COND_DELAY",
       "l": "Dirty cond. alarm delay",
@@ -27,7 +29,9 @@
     },
     {
       "a": 18,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 2,
       "k": "ALARM_COND_DIFF",
       "l": "Dirty cond. alarm temp. diff.",
@@ -38,7 +42,9 @@
     },
     {
       "a": 17,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 3,
       "k": "ALARM_COND_SET",
       "l": "Dirty cond. alarm set point",
@@ -49,7 +55,9 @@
     },
     {
       "a": 32,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 4,
       "k": "ALARM_DEFR_ENABLE",
       "l": "Enable alarm Ed (end defrost by timeout)",
@@ -58,7 +66,9 @@
     },
     {
       "a": 26,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 5,
       "k": "ALARM_EXT_RITARDO",
       "l": "Digital input alarm delay",
@@ -68,7 +78,9 @@
     },
     {
       "a": 24,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 6,
       "k": "ALARM_TEMP_DELAY",
       "l": "Temperature alarm delay",
@@ -78,7 +90,9 @@
     },
     {
       "a": 14,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 7,
       "k": "ALARM_TEMP_DIFF",
       "l": "Alarms and fan differential",
@@ -89,7 +103,9 @@
     },
     {
       "a": 16,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 8,
       "k": "ALARM_TEMP_SET_H",
       "l": "High temperature alarm threshold",
@@ -100,7 +116,9 @@
     },
     {
       "a": 15,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 9,
       "k": "ALARM_TEMP_SET_L",
       "l": "Low temperature alarm threshold",
@@ -111,7 +129,9 @@
     },
     {
       "a": 36,
+      "cat": 3,
       "fc": 3,
+      "g": 1,
       "id": 10,
       "k": "BUZZER_DISABLE",
       "l": "Disable buzzer",
@@ -120,7 +140,9 @@
     },
     {
       "a": 16,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 11,
       "k": "CC_DURATA",
       "l": "Continuous cycle duration",
@@ -129,7 +151,9 @@
     },
     {
       "a": 17,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 12,
       "k": "CC_ESCL_ALM",
       "l": "Temperature alarm bypass after c.c.",
@@ -138,7 +162,9 @@
     },
     {
       "a": 32,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 13,
       "k": "CODE_MODIF_PARAM",
       "l": "ID code (read-only)",
@@ -147,7 +173,9 @@
     },
     {
       "a": 38,
+      "cat": 3,
       "fc": 3,
+      "g": 1,
       "id": 14,
       "k": "COMANDO_ON_OFF",
       "l": "Unit ON/OFF command",
@@ -156,7 +184,9 @@
     },
     {
       "a": 11,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 15,
       "k": "COMP_FAN_RITARDO_START",
       "l": "Start delay after power-on",
@@ -166,7 +196,9 @@
     },
     {
       "a": 13,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 16,
       "k": "COMP_TEMPO_MINIMO_DI_OFF",
       "l": "Minimum compressor OFF time",
@@ -176,7 +208,9 @@
     },
     {
       "a": 14,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 17,
       "k": "COMP_TEMPO_MINIMO_DI_ON",
       "l": "Minimum compressor ON time",
@@ -186,7 +220,9 @@
     },
     {
       "a": 12,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 18,
       "k": "COMP_TEMPO_MINIMO_TRA_START",
       "l": "Delay between 2 consecutive starts",
@@ -196,7 +232,9 @@
     },
     {
       "a": 31,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 19,
       "k": "DEFR_BASE_TEMPI",
       "l": "Time base",
@@ -205,7 +243,9 @@
     },
     {
       "a": 29,
+      "cat": 1,
       "fc": 3,
+      "g": 4,
       "id": 20,
       "k": "DEFR_BLOCCO_DISPLAY",
       "l": "Display of control temperature frozen during defrost",
@@ -214,7 +254,9 @@
     },
     {
       "a": 20,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 21,
       "k": "DEFR_DURATA_MAX",
       "l": "Maximum defrost duration",
@@ -224,7 +266,9 @@
     },
     {
       "a": 23,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 22,
       "k": "DEFR_ESCL_ALM_DOPO",
       "l": "Alarm bypass time after defrost",
@@ -233,7 +277,9 @@
     },
     {
       "a": 22,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 23,
       "k": "DEFR_GOCC_DURATA",
       "l": "Dripping time",
@@ -243,7 +289,9 @@
     },
     {
       "a": 19,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 24,
       "k": "DEFR_INTERVALLO",
       "l": "Interval between defrosts",
@@ -252,7 +300,9 @@
     },
     {
       "a": 30,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 25,
       "k": "DEFR_PRIORITA_SU_COMP",
       "l": "Defrost priority over compressor protectors",
@@ -261,7 +311,9 @@
     },
     {
       "a": 1,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 26,
       "k": "DEFR_SONDA",
       "l": "Defrost probe value",
@@ -271,7 +323,9 @@
     },
     {
       "a": 28,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 27,
       "k": "DEFR_STARTUP",
       "l": "Defrost at instrument power-on",
@@ -280,7 +334,9 @@
     },
     {
       "a": 21,
+      "cat": 12,
       "fc": 2,
+      "g": 4,
       "id": 28,
       "k": "DEFR_STARTUP_RITARDO",
       "l": "Defrost delay from power-on or when enabled by digital input",
@@ -290,7 +346,9 @@
     },
     {
       "a": 13,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 29,
       "k": "DEFR_TEMPERATURA_FINE",
       "l": "End defrost temperature set point",
@@ -301,7 +359,9 @@
     },
     {
       "a": 18,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 30,
       "k": "DEFR_TIPO",
       "l": "Type of defrost",
@@ -310,7 +370,9 @@
     },
     {
       "a": 25,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 31,
       "k": "DIGIN_CONFIG",
       "l": "3rd input conf.",
@@ -319,7 +381,9 @@
     },
     {
       "a": 27,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 32,
       "k": "DISABILITA_PUNTO_DECIMALE",
       "l": "Disable decimal point",
@@ -328,7 +392,9 @@
     },
     {
       "a": 15,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 33,
       "k": "DUTY_SETTING_DURATA",
       "l": "Duty setting time",
@@ -338,7 +404,9 @@
     },
     {
       "a": 33,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 34,
       "k": "EZY_BANK",
       "l": "Select set of default parameters",
@@ -347,7 +415,9 @@
     },
     {
       "a": 34,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 35,
       "k": "FAN_OFF_COMP_OFF",
       "l": "Stop evaporator fans if compressor stops",
@@ -356,7 +426,9 @@
     },
     {
       "a": 28,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 36,
       "k": "FAN_OFF_POST_GOCC",
       "l": "Post-dripping timeout",
@@ -366,7 +438,9 @@
     },
     {
       "a": 33,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 37,
       "k": "FAN_REG_ENABLE",
       "l": "Enable evaporator fan control",
@@ -375,7 +449,9 @@
     },
     {
       "a": 19,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 38,
       "k": "FAN_REG_SET_POINT",
       "l": "Evaporator fan control set point",
@@ -386,7 +462,9 @@
     },
     {
       "a": 35,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 39,
       "k": "FAN_STATUS_IN_DEFROST",
       "l": "Stop evaporator fans during defrost",
@@ -395,7 +473,9 @@
     },
     {
       "a": 55,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 40,
       "k": "FASCIA_ORARIA_AUX_OFF_DAY",
       "l": "AUX time band OFF day",
@@ -404,7 +484,9 @@
     },
     {
       "a": 56,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 41,
       "k": "FASCIA_ORARIA_AUX_OFF_HOUR",
       "l": "AUX time band OFF hour",
@@ -413,7 +495,9 @@
     },
     {
       "a": 57,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 42,
       "k": "FASCIA_ORARIA_AUX_OFF_MINUTE",
       "l": "AUX time band OFF minutes",
@@ -423,7 +507,9 @@
     },
     {
       "a": 52,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 43,
       "k": "FASCIA_ORARIA_AUX_ON_DAY",
       "l": "AUX time band ON day",
@@ -432,7 +518,9 @@
     },
     {
       "a": 53,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 44,
       "k": "FASCIA_ORARIA_AUX_ON_HOUR",
       "l": "AUX time band ON hour",
@@ -441,7 +529,9 @@
     },
     {
       "a": 54,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 45,
       "k": "FASCIA_ORARIA_AUX_ON_MINUTE",
       "l": "AUX time band ON minutes",
@@ -451,7 +541,9 @@
     },
     {
       "a": 34,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 46,
       "k": "FASCIA_ORARIA_DEFR1_DAY",
       "l": "Defrost time band 1st day",
@@ -460,7 +552,9 @@
     },
     {
       "a": 35,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 47,
       "k": "FASCIA_ORARIA_DEFR1_HOUR",
       "l": "Time band 1st hour",
@@ -469,7 +563,9 @@
     },
     {
       "a": 36,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 48,
       "k": "FASCIA_ORARIA_DEFR1_MINUTE",
       "l": "Time band 1st minutes",
@@ -479,7 +575,9 @@
     },
     {
       "a": 37,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 49,
       "k": "FASCIA_ORARIA_DEFR2_DAY",
       "l": "Defrost time band 2nd day",
@@ -488,7 +586,9 @@
     },
     {
       "a": 38,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 50,
       "k": "FASCIA_ORARIA_DEFR2_HOUR",
       "l": "Time band 2nd hour",
@@ -497,7 +597,9 @@
     },
     {
       "a": 39,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 51,
       "k": "FASCIA_ORARIA_DEFR2_MINUTE",
       "l": "Time band 2nd minutes",
@@ -507,7 +609,9 @@
     },
     {
       "a": 40,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 52,
       "k": "FASCIA_ORARIA_DEFR3_DAY",
       "l": "Defrost time band 3rd day",
@@ -516,7 +620,9 @@
     },
     {
       "a": 41,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 53,
       "k": "FASCIA_ORARIA_DEFR3_HOUR",
       "l": "Time band 3rd hour",
@@ -525,7 +631,9 @@
     },
     {
       "a": 42,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 54,
       "k": "FASCIA_ORARIA_DEFR3_MINUTE",
       "l": "Time band 3rd minutes",
@@ -535,7 +643,9 @@
     },
     {
       "a": 43,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 55,
       "k": "FASCIA_ORARIA_DEFR4_DAY",
       "l": "Defrost time band 4th day",
@@ -544,7 +654,9 @@
     },
     {
       "a": 44,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 56,
       "k": "FASCIA_ORARIA_DEFR4_HOUR",
       "l": "Time band 4th hour",
@@ -553,7 +665,9 @@
     },
     {
       "a": 45,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 57,
       "k": "FASCIA_ORARIA_DEFR4_MINUTE",
       "l": "Time band 4th minutes",
@@ -563,7 +677,9 @@
     },
     {
       "a": 49,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 58,
       "k": "FASCIA_ORARIA_NIGHT_OFF_DAY",
       "l": "Night time band OFF day",
@@ -572,7 +688,9 @@
     },
     {
       "a": 50,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 59,
       "k": "FASCIA_ORARIA_NIGHT_OFF_HOUR",
       "l": "Night time band OFF hour",
@@ -581,7 +699,9 @@
     },
     {
       "a": 51,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 60,
       "k": "FASCIA_ORARIA_NIGHT_OFF_MINUTE",
       "l": "Night time band OFF minutes",
@@ -591,7 +711,9 @@
     },
     {
       "a": 46,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 61,
       "k": "FASCIA_ORARIA_NIGHT_ON_DAY",
       "l": "Night time band ON day",
@@ -600,7 +722,9 @@
     },
     {
       "a": 47,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 62,
       "k": "FASCIA_ORARIA_NIGHT_ON_HOUR",
       "l": "Night time band ON hour",
@@ -609,7 +733,9 @@
     },
     {
       "a": 48,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 63,
       "k": "FASCIA_ORARIA_NIGHT_ON_MINUTE",
       "l": "Night time band ON minutes",
@@ -619,7 +745,9 @@
     },
     {
       "a": 31,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 64,
       "k": "KEYBOARD_ENABLE",
       "l": "Enable keypad",
@@ -628,7 +756,9 @@
     },
     {
       "a": 5,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 65,
       "k": "MODELLO_MACCHINA",
       "l": "Machine model",
@@ -636,7 +766,9 @@
     },
     {
       "a": 30,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 66,
       "k": "OUT_AUX_CONFIG",
       "l": "AUX output configuration",
@@ -645,7 +777,9 @@
     },
     {
       "a": 4,
+      "cat": 8,
       "fc": 2,
+      "g": 11,
       "id": 67,
       "k": "PRESENZA_RTC",
       "l": "RTC presence",
@@ -653,7 +787,9 @@
     },
     {
       "a": 12,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 68,
       "k": "REG_DELTA_SET_NOTTE",
       "l": "Night-time set point delta",
@@ -664,7 +800,9 @@
     },
     {
       "a": 9,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 69,
       "k": "REG_DIFFERENZIALE",
       "l": "Working temperature differential",
@@ -675,7 +813,9 @@
     },
     {
       "a": 10,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 70,
       "k": "REG_DIRECT_REVERSE",
       "l": "Direct/reverse",
@@ -684,7 +824,9 @@
     },
     {
       "a": 11,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 71,
       "k": "REG_SET_MAX",
       "l": "Maximum set point allowed",
@@ -695,7 +837,9 @@
     },
     {
       "a": 10,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 72,
       "k": "REG_SET_MIN",
       "l": "Minimum set point allowed",
@@ -706,7 +850,9 @@
     },
     {
       "a": 8,
+      "cat": 2,
       "fc": 1,
+      "g": 15,
       "id": 73,
       "k": "REG_SET_POINT",
       "l": "Temperature setpoint",
@@ -717,7 +863,9 @@
     },
     {
       "a": 37,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 74,
       "k": "RTC_ENABLE",
       "l": "Enable RTC",
@@ -726,7 +874,9 @@
     },
     {
       "a": 1,
+      "cat": 8,
       "fc": 2,
+      "g": 11,
       "id": 75,
       "k": "RTC_GIORNO_SETTIM",
       "l": "RTC day of the week",
@@ -735,7 +885,9 @@
     },
     {
       "a": 3,
+      "cat": 8,
       "fc": 2,
+      "g": 11,
       "id": 76,
       "k": "RTC_MINUTO",
       "l": "RTC minutes",
@@ -745,7 +897,9 @@
     },
     {
       "a": 2,
+      "cat": 8,
       "fc": 2,
+      "g": 11,
       "id": 77,
       "k": "RTC_ORA",
       "l": "RTC hour",
@@ -754,7 +908,9 @@
     },
     {
       "a": 29,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 78,
       "k": "SERIAL_ADDRESS",
       "l": "Serial address",
@@ -762,7 +918,9 @@
     },
     {
       "a": 5,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 79,
       "k": "SONDE_OFFSET_SONDA_1",
       "l": "Probe 1 offset",
@@ -773,7 +931,9 @@
     },
     {
       "a": 6,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 80,
       "k": "SONDE_OFFSET_SONDA_2",
       "l": "Probe 2 offset",
@@ -784,7 +944,9 @@
     },
     {
       "a": 7,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 81,
       "k": "SONDE_OFFSET_SONDA_3",
       "l": "Probe 3 offset",
@@ -795,7 +957,9 @@
     },
     {
       "a": 26,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 82,
       "k": "SONDE_SELEZ_C_F",
       "l": "Select C/F",
@@ -804,7 +968,9 @@
     },
     {
       "a": 8,
+      "cat": 1,
       "fc": 2,
+      "g": 4,
       "id": 83,
       "k": "SONDE_STABILITA_MISURA",
       "l": "Probe measurement stability",
@@ -813,7 +979,9 @@
     },
     {
       "a": 25,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 84,
       "k": "S_ALARM_PORTA_APERTA",
       "l": "Open door alarm status",
@@ -821,7 +989,9 @@
     },
     {
       "a": 10,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 85,
       "k": "S_ALM_ALTA_TEMP",
       "l": "High temperature alarm",
@@ -829,7 +999,9 @@
     },
     {
       "a": 15,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 86,
       "k": "S_ALM_ALTA_TEMP_COND",
       "l": "High temperature condenser alarm",
@@ -837,7 +1009,9 @@
     },
     {
       "a": 9,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 87,
       "k": "S_ALM_BASSA_TEMP",
       "l": "Low temperature alarm",
@@ -845,7 +1019,9 @@
     },
     {
       "a": 18,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 88,
       "k": "S_ALM_EEPROM_PAR_FUNZ",
       "l": "Functions parameters eeprom alarm",
@@ -853,7 +1029,9 @@
     },
     {
       "a": 17,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 89,
       "k": "S_ALM_EEPROM_PAR_MACC",
       "l": "Machine parameters eeprom alarm",
@@ -861,7 +1039,9 @@
     },
     {
       "a": 11,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 90,
       "k": "S_ALM_IMMEDIATO_ESTERNO",
       "l": "External immediate alarm",
@@ -869,7 +1049,9 @@
     },
     {
       "a": 14,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 91,
       "k": "S_ALM_PRE_ALTA_TEMP_COND",
       "l": "High temperature condenser pre-alarm",
@@ -877,7 +1059,9 @@
     },
     {
       "a": 12,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 92,
       "k": "S_ALM_RITARDATO_ESTERNO",
       "l": "External delay alarm",
@@ -885,7 +1069,9 @@
     },
     {
       "a": 16,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 93,
       "k": "S_ALM_RTC_GUASTO",
       "l": "Broken RTC alarm",
@@ -893,7 +1079,9 @@
     },
     {
       "a": 6,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 94,
       "k": "S_ALM_SONDA_1",
       "l": "Probe 1 alarm",
@@ -901,7 +1089,9 @@
     },
     {
       "a": 7,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 95,
       "k": "S_ALM_SONDA_2",
       "l": "Probe 2 alarm",
@@ -909,7 +1099,9 @@
     },
     {
       "a": 8,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 96,
       "k": "S_ALM_SONDA_3",
       "l": "Probe 3 alarm",
@@ -917,7 +1109,9 @@
     },
     {
       "a": 13,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 97,
       "k": "S_ALM_TIMEOUT_DEFROST",
       "l": "Timeout defrost alarm",
@@ -925,7 +1119,9 @@
     },
     {
       "a": 22,
+      "cat": 3,
       "fc": 3,
+      "g": 1,
       "id": 98,
       "k": "S_COMANDO_CICLO_CONTINUO",
       "l": "Continuous cycle command",
@@ -934,7 +1130,9 @@
     },
     {
       "a": 20,
+      "cat": 3,
       "fc": 3,
+      "g": 1,
       "id": 99,
       "k": "S_COMANDO_DEFROST",
       "l": "Defrost command",
@@ -943,7 +1141,9 @@
     },
     {
       "a": 1,
+      "cat": 12,
       "fc": 3,
+      "g": 4,
       "id": 100,
       "k": "S_DIGIN",
       "l": "Digital input status",
@@ -951,7 +1151,9 @@
     },
     {
       "a": 24,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 101,
       "k": "S_PRE_ALARM_PORTA_APERTA",
       "l": "Open door pre-alarm status",
@@ -959,7 +1161,9 @@
     },
     {
       "a": 5,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 102,
       "k": "S_RELE_AUX",
       "l": "AUX relay status",
@@ -967,7 +1171,9 @@
     },
     {
       "a": 2,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 103,
       "k": "S_RELE_COMP",
       "l": "Compressor relay status",
@@ -975,7 +1181,9 @@
     },
     {
       "a": 3,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 104,
       "k": "S_RELE_DEFR",
       "l": "Defrost relay status",
@@ -983,7 +1191,9 @@
     },
     {
       "a": 4,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 105,
       "k": "S_RELE_FAN",
       "l": "Fan relay status",
@@ -991,7 +1201,9 @@
     },
     {
       "a": 23,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 106,
       "k": "S_SET_NIGHT_RTC",
       "l": "Set point started by RTC",
@@ -999,7 +1211,9 @@
     },
     {
       "a": 2,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 107,
       "k": "S_SONDA_1",
       "l": "Regulation temperature",
@@ -1009,7 +1223,9 @@
     },
     {
       "a": 3,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 108,
       "k": "S_SONDA_2",
       "l": "Probe 2 value",
@@ -1019,7 +1235,9 @@
     },
     {
       "a": 4,
+      "cat": 1,
       "fc": 1,
+      "g": 4,
       "id": 109,
       "k": "S_SONDA_3",
       "l": "Probe 3 value",
@@ -1029,7 +1247,9 @@
     },
     {
       "a": 21,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 110,
       "k": "S_STATO_CICLO_CONTINUO",
       "l": "Continuous cycle status",
@@ -1037,7 +1257,9 @@
     },
     {
       "a": 19,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 111,
       "k": "S_STATO_DEFROST",
       "l": "Defrost status",
@@ -1045,7 +1267,9 @@
     },
     {
       "a": 6,
+      "cat": 1,
       "fc": 2,
+      "g": 4,
       "id": 112,
       "k": "TIPO_SONDE",
       "l": "Probe type NTC/PTC",
@@ -1053,7 +1277,9 @@
     },
     {
       "a": 9,
+      "cat": 10,
       "fc": 2,
+      "g": 15,
       "id": 113,
       "k": "VIS_SONDA_SELEZ",
       "l": "Select display probe",

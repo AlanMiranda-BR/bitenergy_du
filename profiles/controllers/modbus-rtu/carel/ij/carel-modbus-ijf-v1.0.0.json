@@ -15,11 +15,13 @@
   "regs": [
     {
       "a": 11,
+      "cat": 3,
       "enum": [
         "°C",
         "°F"
       ],
       "fc": 1,
+      "g": 1,
       "id": 1,
       "k": "/5",
       "l": "Unit of measure",
@@ -28,11 +30,13 @@
     },
     {
       "a": 14,
+      "cat": 3,
       "enum": [
         "Visible",
         "Not visible"
       ],
       "fc": 1,
+      "g": 1,
       "id": 2,
       "k": "/6",
       "l": "Decimal point visualization",
@@ -41,7 +45,9 @@
     },
     {
       "a": 35,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 3,
       "k": "A0",
       "l": "Temperature alarms reset differential",
@@ -52,7 +58,9 @@
     },
     {
       "a": 33,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 4,
       "k": "vSr",
       "l": "Variable speed compressor request",
@@ -62,7 +70,9 @@
     },
     {
       "a": 4,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 5,
       "k": "AFr",
       "l": "Antifreeze alarm",
@@ -71,7 +81,9 @@
     },
     {
       "a": 36,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 6,
       "k": "AH",
       "l": "High temperature alarm threshold",
@@ -82,7 +94,9 @@
     },
     {
       "a": 37,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 7,
       "k": "AL",
       "l": "Low temperature alarm threshold",
@@ -93,7 +107,9 @@
     },
     {
       "a": 6,
+      "cat": 2,
       "fc": 4,
+      "g": 15,
       "id": 8,
       "k": "ASt",
       "l": "Regulation temperature working setpoint",
@@ -104,7 +120,9 @@
     },
     {
       "a": 16,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 9,
       "k": "AtS",
       "l": "Autostart in pump down",
@@ -113,7 +131,9 @@
     },
     {
       "a": 20,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 10,
       "k": "Aux",
       "l": "Auxiliary temperature",
@@ -124,7 +144,9 @@
     },
     {
       "a": 21,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 11,
       "k": "Aux2",
       "l": "Auxiliary temperature 2",
@@ -135,7 +157,9 @@
     },
     {
       "a": 31,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 12,
       "k": "CE",
       "l": "Configuration writing error",
@@ -144,7 +168,9 @@
     },
     {
       "a": 2,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 13,
       "k": "CHt",
       "l": "Dirty condenser alarm",
@@ -153,7 +179,9 @@
     },
     {
       "a": 34,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 14,
       "k": "cht",
       "l": "Dirty condenser pre-alarm",
@@ -162,7 +190,9 @@
     },
     {
       "a": 2,
+      "cat": 3,
       "fc": 1,
+      "g": 1,
       "id": 15,
       "k": "CnC",
       "l": "Continuous cycle",
@@ -171,7 +201,9 @@
     },
     {
       "a": 10,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 16,
       "k": "COM",
       "l": "Compressor offline",
@@ -180,7 +212,9 @@
     },
     {
       "a": 16,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 17,
       "k": "fCA",
       "l": "Variable speed compressor reading",
@@ -190,6 +224,7 @@
     },
     {
       "a": 7,
+      "cat": 10,
       "enum": [
         "heater by temperature",
         "hot gas by temperature",
@@ -198,6 +233,7 @@
         "heater by time with temperature control"
       ],
       "fc": 3,
+      "g": 15,
       "id": 18,
       "k": "d0",
       "l": "Defrost type",
@@ -206,7 +242,9 @@
     },
     {
       "a": 6,
+      "cat": 5,
       "fc": 3,
+      "g": 4,
       "id": 19,
       "k": "d10",
       "l": "Defrost time in “Running time\" mode",
@@ -216,7 +254,9 @@
     },
     {
       "a": 8,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 20,
       "k": "d11",
       "l": "Defrost temperature threshold in \"Running time\" mode",
@@ -227,7 +267,9 @@
     },
     {
       "a": 56,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 21,
       "k": "d16",
       "l": "No-downward tendency check time",
@@ -237,7 +279,9 @@
     },
     {
       "a": 57,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 22,
       "k": "d20",
       "l": "Sampling time for tendency evaluation",
@@ -247,7 +291,9 @@
     },
     {
       "a": 9,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 23,
       "k": "d21",
       "l": "Number of defrosts before RSF alarm",
@@ -256,7 +302,9 @@
     },
     {
       "a": 39,
+      "cat": 1,
       "fc": 3,
+      "g": 4,
       "id": 24,
       "k": "d22",
       "l": "Temperature gap for tendency evaluation",
@@ -267,7 +315,9 @@
     },
     {
       "a": 49,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 25,
       "k": "d6",
       "l": "Display during defrost",
@@ -276,7 +326,9 @@
     },
     {
       "a": 0,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 26,
       "k": "d8",
       "l": "High temperature alarm delay after defrost",
@@ -286,7 +338,9 @@
     },
     {
       "a": 27,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 27,
       "k": "dA",
       "l": "Delayed external alarm",
@@ -295,11 +349,13 @@
     },
     {
       "a": 3,
+      "cat": 5,
       "enum": [
         "Eco",
         "Day"
       ],
       "fc": 1,
+      "g": 4,
       "id": 28,
       "k": "dAS",
       "l": "Controller mode: 0 = Eco, 1 = Day",
@@ -308,7 +364,9 @@
     },
     {
       "a": 40,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 29,
       "k": "dd",
       "l": "Dripping time",
@@ -318,7 +376,9 @@
     },
     {
       "a": 12,
+      "cat": 3,
       "fc": 1,
+      "g": 1,
       "id": 30,
       "k": "dfM",
       "l": "Defrost command",
@@ -327,7 +387,9 @@
     },
     {
       "a": 70,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 31,
       "k": "dFr",
       "l": "Defrost status",
@@ -336,7 +398,9 @@
     },
     {
       "a": 30,
+      "cat": 5,
       "fc": 4,
+      "g": 4,
       "id": 32,
       "k": "dFS",
       "l": "Current defrost status",
@@ -345,7 +409,9 @@
     },
     {
       "a": 1,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 33,
       "k": "dI",
       "l": "Defrost interval",
@@ -355,7 +421,9 @@
     },
     {
       "a": 3,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 34,
       "k": "dor",
       "l": "Door open alarm",
@@ -364,7 +432,9 @@
     },
     {
       "a": 2,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 35,
       "k": "dP1",
       "l": "Maximum defrost duration",
@@ -374,7 +444,9 @@
     },
     {
       "a": 4,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 36,
       "k": "dP2",
       "l": "Maximum defrost duration auxiliary evaporator",
@@ -384,7 +456,9 @@
     },
     {
       "a": 3,
+      "cat": 1,
       "fc": 3,
+      "g": 4,
       "id": 37,
       "k": "dt1",
       "l": "End defrost temperature",
@@ -395,7 +469,9 @@
     },
     {
       "a": 5,
+      "cat": 1,
       "fc": 3,
+      "g": 4,
       "id": 38,
       "k": "dt2",
       "l": "End defrost temperature axiliary evap.",
@@ -406,7 +482,9 @@
     },
     {
       "a": 17,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 39,
       "k": "E1",
       "l": "Probe S1 alarm",
@@ -415,7 +493,9 @@
     },
     {
       "a": 18,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 40,
       "k": "E2",
       "l": "Probe S2 alarm",
@@ -424,7 +504,9 @@
     },
     {
       "a": 19,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 41,
       "k": "E3",
       "l": "Probe S3 alarm",
@@ -433,7 +515,9 @@
     },
     {
       "a": 20,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 42,
       "k": "E4",
       "l": "Probe S4 alarm",
@@ -442,7 +526,9 @@
     },
     {
       "a": 21,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 43,
       "k": "E5",
       "l": "Probe S5 alarm",
@@ -451,7 +537,9 @@
     },
     {
       "a": 29,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 44,
       "k": "Ed1",
       "l": "Warning for timeout of defrost 1",
@@ -460,7 +548,9 @@
     },
     {
       "a": 30,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 45,
       "k": "Ed2",
       "l": "Warning for timeout of defrost 2",
@@ -469,7 +559,9 @@
     },
     {
       "a": 24,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 46,
       "k": "Etc",
       "l": "Clock error",
@@ -478,6 +570,7 @@
     },
     {
       "a": 60,
+      "cat": 10,
       "enum": [
         "Always ON",
         "On difference Sd-Sv",
@@ -485,6 +578,7 @@
         "On Sv probe"
       ],
       "fc": 3,
+      "g": 15,
       "id": 47,
       "k": "F0",
       "l": "Evaporator fan management",
@@ -493,7 +587,9 @@
     },
     {
       "a": 11,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 48,
       "k": "FAA",
       "l": "Evaporator Fan",
@@ -504,7 +600,9 @@
     },
     {
       "a": 14,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 49,
       "k": "FAc",
       "l": "Rails",
@@ -515,7 +613,9 @@
     },
     {
       "a": 12,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 50,
       "k": "FAd",
       "l": "Generic modulation 1",
@@ -526,7 +626,9 @@
     },
     {
       "a": 10,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 51,
       "k": "FAE",
       "l": "Condenser Fan",
@@ -537,7 +639,9 @@
     },
     {
       "a": 13,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 52,
       "k": "FAF",
       "l": "Light",
@@ -548,7 +652,9 @@
     },
     {
       "a": 9,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 53,
       "k": "FAG",
       "l": "Compressor",
@@ -559,7 +665,9 @@
     },
     {
       "a": 41,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 54,
       "k": "Fd",
       "l": "Post dripping time",
@@ -569,7 +677,9 @@
     },
     {
       "a": 35,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 55,
       "k": "FIA",
       "l": "Immediate external alarm",
@@ -578,7 +688,9 @@
     },
     {
       "a": 41,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 56,
       "k": "FIb",
       "l": "Delayed external alarm",
@@ -587,7 +699,9 @@
     },
     {
       "a": 44,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 57,
       "k": "FIc",
       "l": "Enable defrost",
@@ -596,7 +710,9 @@
     },
     {
       "a": 37,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 58,
       "k": "FId",
       "l": "Call defrost",
@@ -605,7 +721,9 @@
     },
     {
       "a": 42,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 59,
       "k": "FIE",
       "l": "Door status - Regulation OFF",
@@ -614,7 +732,9 @@
     },
     {
       "a": 46,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 60,
       "k": "FIF",
       "l": "Remote ON/OFF",
@@ -623,7 +743,9 @@
     },
     {
       "a": 40,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 61,
       "k": "FIG",
       "l": "Curtain switch",
@@ -632,7 +754,9 @@
     },
     {
       "a": 39,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 62,
       "k": "FIH",
       "l": "Continuous cycle start/stop",
@@ -641,7 +765,9 @@
     },
     {
       "a": 36,
+      "cat": 12,
       "fc": 2,
+      "g": 4,
       "id": 63,
       "k": "FIU",
       "l": "Auxiliary digital input",
@@ -650,7 +776,9 @@
     },
     {
       "a": 38,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 64,
       "k": "FIo",
       "l": "Change configuration",
@@ -659,7 +787,9 @@
     },
     {
       "a": 43,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 65,
       "k": "FIP",
       "l": "Door status - Regulation ON",
@@ -668,7 +798,9 @@
     },
     {
       "a": 45,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 66,
       "k": "FIS",
       "l": "Digital input for generic function alarm",
@@ -677,7 +809,9 @@
     },
     {
       "a": 47,
+      "cat": 1,
       "fc": 2,
+      "g": 4,
       "id": 67,
       "k": "FIt",
       "l": "Low pressure switch",
@@ -686,7 +820,9 @@
     },
     {
       "a": 67,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 68,
       "k": "FOA",
       "l": "Solenoid/Compressor",
@@ -695,7 +831,9 @@
     },
     {
       "a": 48,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 69,
       "k": "FOb",
       "l": "Alarm",
@@ -704,7 +842,9 @@
     },
     {
       "a": 49,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 70,
       "k": "FOc",
       "l": "AUX",
@@ -713,7 +853,9 @@
     },
     {
       "a": 63,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 71,
       "k": "FOE",
       "l": "Light",
@@ -722,7 +864,9 @@
     },
     {
       "a": 53,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 72,
       "k": "FOG",
       "l": "Defrost",
@@ -731,7 +875,9 @@
     },
     {
       "a": 54,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 73,
       "k": "FOH",
       "l": "Auxiliary defrost",
@@ -740,7 +886,9 @@
     },
     {
       "a": 59,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 74,
       "k": "FOI",
       "l": "Evaporator Fan",
@@ -749,7 +897,9 @@
     },
     {
       "a": 56,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 75,
       "k": "FOj",
       "l": "Dehumidification heaters",
@@ -758,7 +908,9 @@
     },
     {
       "a": 51,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 76,
       "k": "FOk",
       "l": "Auxiliary compressor without rotation",
@@ -767,7 +919,9 @@
     },
     {
       "a": 64,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 77,
       "k": "FOn",
       "l": "Liquid Valve",
@@ -776,7 +930,9 @@
     },
     {
       "a": 58,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 78,
       "k": "FOP",
       "l": "Drain heaters",
@@ -785,7 +941,9 @@
     },
     {
       "a": 65,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 79,
       "k": "FOq",
       "l": "Rail heaters",
@@ -794,7 +952,9 @@
     },
     {
       "a": 60,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 80,
       "k": "FOs",
       "l": "Generic stage 1",
@@ -803,7 +963,9 @@
     },
     {
       "a": 52,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 81,
       "k": "FOt",
       "l": "Condenser fan",
@@ -812,7 +974,9 @@
     },
     {
       "a": 62,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 82,
       "k": "FOu",
       "l": "Humidification",
@@ -821,7 +985,9 @@
     },
     {
       "a": 66,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 83,
       "k": "FOv",
       "l": "Auxiliary reverse with neutral zone",
@@ -830,7 +996,9 @@
     },
     {
       "a": 57,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 84,
       "k": "FOw",
       "l": "Auxiliary parallel compressor",
@@ -839,7 +1007,9 @@
     },
     {
       "a": 61,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 85,
       "k": "FOx",
       "l": "Gasket heater",
@@ -848,7 +1018,9 @@
     },
     {
       "a": 50,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 86,
       "k": "FOy",
       "l": "Auxiliary compressor with rotation",
@@ -857,7 +1029,9 @@
     },
     {
       "a": 55,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 87,
       "k": "FOz",
       "l": "External dehumidifier",
@@ -866,7 +1040,9 @@
     },
     {
       "a": 5,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 88,
       "k": "GHI",
       "l": "Generic function 1 high difference alarm",
@@ -875,7 +1051,9 @@
     },
     {
       "a": 6,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 89,
       "k": "GLO",
       "l": "Generic function 1 low difference alarm",
@@ -884,12 +1062,14 @@
     },
     {
       "a": 50,
+      "cat": 1,
       "enum": [
         "Low humidity",
         "Medium humidity",
         "High humidity"
       ],
       "fc": 3,
+      "g": 4,
       "id": 90,
       "k": "HU",
       "l": "humidity management level",
@@ -898,11 +1078,13 @@
     },
     {
       "a": 61,
+      "cat": 10,
       "enum": [
         "Light",
         "AUX"
       ],
       "fc": 3,
+      "g": 15,
       "id": 91,
       "k": "H8",
       "l": "Output switched with scheduler",
@@ -911,7 +1093,9 @@
     },
     {
       "a": 7,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 92,
       "k": "HA",
       "l": "HACCP alarm - HA",
@@ -920,11 +1104,13 @@
     },
     {
       "a": 1,
+      "cat": 3,
       "enum": [
         "Disabled",
         "Enabled"
       ],
       "fc": 1,
+      "g": 1,
       "id": 93,
       "k": "Hb",
       "l": "Buzzer",
@@ -933,7 +1119,9 @@
     },
     {
       "a": 8,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 94,
       "k": "HF",
       "l": "HACCP alarm - HF",
@@ -942,7 +1130,9 @@
     },
     {
       "a": 9,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 95,
       "k": "HI",
       "l": "High temperature alarm",
@@ -951,6 +1141,7 @@
     },
     {
       "a": 38,
+      "cat": 10,
       "enum": [
         null,
         "25",
@@ -959,6 +1150,7 @@
         "100"
       ],
       "fc": 3,
+      "g": 15,
       "id": 96,
       "k": "HL",
       "l": "Light analog output value",
@@ -968,7 +1160,9 @@
     },
     {
       "a": 58,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 97,
       "k": "HMP",
       "l": "Maintenance hours threshold (hours x1000)",
@@ -977,11 +1171,13 @@
     },
     {
       "a": 13,
+      "cat": 9,
       "enum": [
         null,
         "Reset"
       ],
       "fc": 1,
+      "g": 15,
       "id": 98,
       "k": "HMr",
       "l": "Working time reset",
@@ -990,7 +1186,9 @@
     },
     {
       "a": 0,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 99,
       "k": "HW_CONFIG",
       "l": "HW_CONFIG",
@@ -999,7 +1197,9 @@
     },
     {
       "a": 28,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 100,
       "k": "IA",
       "l": "Immediate alarm",
@@ -1008,7 +1208,9 @@
     },
     {
       "a": 11,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 101,
       "k": "IOC",
       "l": "I/O configuration alarm",
@@ -1017,7 +1219,9 @@
     },
     {
       "a": 10,
+      "cat": 3,
       "fc": 1,
+      "g": 1,
       "id": 102,
       "k": "Lht",
       "l": "Light",
@@ -1026,7 +1230,9 @@
     },
     {
       "a": 13,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 103,
       "k": "LO",
       "l": "Low temperature alarm",
@@ -1035,7 +1241,9 @@
     },
     {
       "a": 12,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 104,
       "k": "LP",
       "l": "Low pressure alarm",
@@ -1044,11 +1252,13 @@
     },
     {
       "a": 15,
+      "cat": 3,
       "enum": [
         "Disabled",
         "Enabled"
       ],
       "fc": 1,
+      "g": 1,
       "id": 105,
       "k": "/nE",
       "l": "HMI navigation lock",
@@ -1057,7 +1267,9 @@
     },
     {
       "a": 0,
+      "cat": 3,
       "fc": 1,
+      "g": 1,
       "id": 106,
       "k": "On",
       "l": "On-off command",
@@ -1066,7 +1278,9 @@
     },
     {
       "a": 15,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 107,
       "k": "Pd",
       "l": "Maximum pump down time alarm",
@@ -1075,7 +1289,9 @@
     },
     {
       "a": 69,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 108,
       "k": "PAL",
       "l": "Probe alarms",
@@ -1084,7 +1300,9 @@
     },
     {
       "a": 43,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 109,
       "k": "r1",
       "l": "Minimum temperature setpoint",
@@ -1095,7 +1313,9 @@
     },
     {
       "a": 42,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 110,
       "k": "r2",
       "l": "Maximum temperature setpoint",
@@ -1106,7 +1326,9 @@
     },
     {
       "a": 46,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 111,
       "k": "rd",
       "l": "Regulation temperature differential",
@@ -1117,7 +1339,9 @@
     },
     {
       "a": 51,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 112,
       "k": "rdh",
       "l": "Humidity differential",
@@ -1127,7 +1351,9 @@
     },
     {
       "a": 22,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 113,
       "k": "rE",
       "l": "Control probe fault",
@@ -1136,7 +1362,9 @@
     },
     {
       "a": 7,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 114,
       "k": "SrG",
       "l": "Regulation temperature",
@@ -1147,7 +1375,9 @@
     },
     {
       "a": 44,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 115,
       "k": "rn",
       "l": "Neutral zone",
@@ -1158,7 +1388,9 @@
     },
     {
       "a": 52,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 116,
       "k": "rnH",
       "l": "Humidity dead band",
@@ -1168,7 +1400,9 @@
     },
     {
       "a": 45,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 117,
       "k": "rr",
       "l": "Reverse differential temperature",
@@ -1179,7 +1413,9 @@
     },
     {
       "a": 53,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 118,
       "k": "rrH",
       "l": "Dehumidification differential",
@@ -1189,7 +1425,9 @@
     },
     {
       "a": 23,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 119,
       "k": "rSF",
       "l": "Refrigerant System Failure Alarm",
@@ -1198,7 +1436,9 @@
     },
     {
       "a": 77,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 120,
       "k": "RTC_Vars.SPV_Day",
       "l": "Current day",
@@ -1207,7 +1447,9 @@
     },
     {
       "a": 78,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 121,
       "k": "RTC_Vars.SPV_Hour",
       "l": "Current hour",
@@ -1216,7 +1458,9 @@
     },
     {
       "a": 79,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 122,
       "k": "RTC_Vars.SPV_Min",
       "l": "Current minute",
@@ -1225,7 +1469,9 @@
     },
     {
       "a": 80,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 123,
       "k": "RTC_Vars.SPV_Month",
       "l": "Current month",
@@ -1234,7 +1480,9 @@
     },
     {
       "a": 81,
+      "cat": 8,
       "fc": 3,
+      "g": 11,
       "id": 124,
       "k": "RTC_Vars.SPV_Year",
       "l": "Current year",
@@ -1243,7 +1491,9 @@
     },
     {
       "a": 19,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 125,
       "k": "SA",
       "l": "Ambient temperature",
@@ -1254,7 +1504,9 @@
     },
     {
       "a": 22,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 126,
       "k": "Sc",
       "l": "Condenser temperature",
@@ -1265,7 +1517,9 @@
     },
     {
       "a": 23,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 127,
       "k": "Sd",
       "l": "Defrost temperature",
@@ -1276,7 +1530,9 @@
     },
     {
       "a": 24,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 128,
       "k": "Sd2",
       "l": "Auxiliary defrost temperature",
@@ -1287,7 +1543,9 @@
     },
     {
       "a": 25,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 129,
       "k": "SFr",
       "l": "Antifreeze temperature",
@@ -1298,7 +1556,9 @@
     },
     {
       "a": 27,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 130,
       "k": "SHu",
       "l": "Humidity probe",
@@ -1308,7 +1568,9 @@
     },
     {
       "a": 17,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 131,
       "k": "Sm",
       "l": "Outlet temperature",
@@ -1319,7 +1581,9 @@
     },
     {
       "a": 28,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 132,
       "k": "SPr",
       "l": "Product temperature",
@@ -1330,7 +1594,9 @@
     },
     {
       "a": 18,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 133,
       "k": "Sr",
       "l": "Intake temperature",
@@ -1341,7 +1607,9 @@
     },
     {
       "a": 14,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 134,
       "k": "SrC",
       "l": "Maintenance request",
@@ -1350,7 +1618,9 @@
     },
     {
       "a": 47,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 135,
       "k": "St",
       "l": "Regulation setpoint",
@@ -1361,7 +1631,9 @@
     },
     {
       "a": 54,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 136,
       "k": "Sth",
       "l": "Humidity setpoint",
@@ -1371,7 +1643,9 @@
     },
     {
       "a": 8,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 137,
       "k": "Sv",
       "l": "Virtual probe",
@@ -1382,7 +1656,9 @@
     },
     {
       "a": 26,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 138,
       "k": "Svt",
       "l": "Glass temperature",
@@ -1393,6 +1669,7 @@
     },
     {
       "a": 10,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1408,6 +1685,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 139,
       "k": "td1-d",
       "l": "Time band 1 - day",
@@ -1416,7 +1694,9 @@
     },
     {
       "a": 11,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 140,
       "k": "td1-hh",
       "l": "Time band 1 - hour",
@@ -1426,7 +1706,9 @@
     },
     {
       "a": 12,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 141,
       "k": "td1-mm",
       "l": "Time band 1 - minute",
@@ -1436,6 +1718,7 @@
     },
     {
       "a": 13,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1451,6 +1734,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 142,
       "k": "td2-d",
       "l": "Time band 2 - day",
@@ -1459,7 +1743,9 @@
     },
     {
       "a": 14,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 143,
       "k": "td2-hh",
       "l": "Time band 2 - hour",
@@ -1469,7 +1755,9 @@
     },
     {
       "a": 15,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 144,
       "k": "td2-mm",
       "l": "Time band 2 - minute",
@@ -1479,6 +1767,7 @@
     },
     {
       "a": 16,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1494,6 +1783,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 145,
       "k": "td3-d",
       "l": "Time band 3 - day",
@@ -1502,7 +1792,9 @@
     },
     {
       "a": 17,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 146,
       "k": "td3-hh",
       "l": "Time band 3 - hour",
@@ -1512,7 +1804,9 @@
     },
     {
       "a": 18,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 147,
       "k": "td3-mm",
       "l": "Time band 3 - minute",
@@ -1522,6 +1816,7 @@
     },
     {
       "a": 19,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1537,6 +1832,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 148,
       "k": "td4-d",
       "l": "Time band 4 - day",
@@ -1545,7 +1841,9 @@
     },
     {
       "a": 20,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 149,
       "k": "td4-hh",
       "l": "Time band 4 - hour",
@@ -1555,7 +1853,9 @@
     },
     {
       "a": 21,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 150,
       "k": "td4-mm",
       "l": "Time band 4 - minute",
@@ -1565,6 +1865,7 @@
     },
     {
       "a": 22,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1580,6 +1881,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 151,
       "k": "td5-d",
       "l": "Time band 5 - day",
@@ -1588,7 +1890,9 @@
     },
     {
       "a": 23,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 152,
       "k": "td5-hh",
       "l": "Time band 5 - hour",
@@ -1598,7 +1902,9 @@
     },
     {
       "a": 24,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 153,
       "k": "td5-mm",
       "l": "Time band 5 - minute",
@@ -1608,6 +1914,7 @@
     },
     {
       "a": 25,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1623,6 +1930,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 154,
       "k": "td6-d",
       "l": "Time band 6 - day",
@@ -1631,7 +1939,9 @@
     },
     {
       "a": 26,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 155,
       "k": "td6-hh",
       "l": "Time band 6 - hour",
@@ -1641,7 +1951,9 @@
     },
     {
       "a": 27,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 156,
       "k": "td6-mm",
       "l": "Time band 6 - minute",
@@ -1651,6 +1963,7 @@
     },
     {
       "a": 28,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1666,6 +1979,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 157,
       "k": "td7-d",
       "l": "Time band 7 - day",
@@ -1674,7 +1988,9 @@
     },
     {
       "a": 29,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 158,
       "k": "td7-hh",
       "l": "Time band 7 - hour",
@@ -1684,7 +2000,9 @@
     },
     {
       "a": 30,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 159,
       "k": "td7-mm",
       "l": "Time band 7 - minute",
@@ -1694,6 +2012,7 @@
     },
     {
       "a": 31,
+      "cat": 10,
       "enum": [
         "Disabled",
         "Monday",
@@ -1709,6 +2028,7 @@
         "Every day"
       ],
       "fc": 3,
+      "g": 15,
       "id": 160,
       "k": "td8-d",
       "l": "Time band 8 - day",
@@ -1717,7 +2037,9 @@
     },
     {
       "a": 32,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 161,
       "k": "td8-hh",
       "l": "Time band 8 - hour",
@@ -1727,7 +2049,9 @@
     },
     {
       "a": 33,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 162,
       "k": "td8-mm",
       "l": "Time band 8 - minute",
@@ -1737,7 +2061,9 @@
     },
     {
       "a": 55,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 163,
       "k": "TdL",
       "l": "Temperature differential to enable humidity control",
@@ -1748,7 +2074,9 @@
     },
     {
       "a": 26,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 164,
       "k": "UCF",
       "l": "VCC malfunction",
@@ -1757,7 +2085,9 @@
     },
     {
       "a": 15,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 165,
       "k": "W_mode",
       "l": "Unit working mode",
@@ -1766,11 +2096,13 @@
     },
     {
       "a": 16,
+      "cat": 3,
       "enum": [
         "Disabled",
         "Enabled"
       ],
       "fc": 1,
+      "g": 1,
       "id": 166,
       "k": "BtE",
       "l": "Bluetooth communication",
@@ -1779,7 +2111,9 @@
     },
     {
       "a": 32,
+      "cat": 4,
       "fc": 4,
+      "g": 1,
       "id": 167,
       "k": "ALr",
       "l": "Category active alarm",
@@ -1788,11 +2122,13 @@
     },
     {
       "a": 17,
+      "cat": 9,
       "enum": [
         "NO",
         "Reset"
       ],
       "fc": 1,
+      "g": 15,
       "id": 168,
       "k": "rtL",
       "l": "Reset monitoring session",
@@ -1801,7 +2137,9 @@
     },
     {
       "a": 63,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 169,
       "k": "IS",
       "l": "Configuration to upload",
@@ -1810,7 +2148,9 @@
     },
     {
       "a": 31,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 170,
       "k": "MiskVars.SwVer",
       "l": "Software version",
@@ -1819,7 +2159,9 @@
     },
     {
       "a": 62,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 171,
       "k": "St_idx",
       "l": "Setpoint index",
@@ -1828,7 +2170,9 @@
     },
     {
       "a": 64,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 172,
       "k": "Sc1",
       "l": "Custom 1 : Temperature regulation setpoint",
@@ -1838,7 +2182,9 @@
     },
     {
       "a": 65,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 173,
       "k": "Sc2",
       "l": "Custom 2 : Temperature regulation setpoint",
@@ -1848,7 +2194,9 @@
     },
     {
       "a": 66,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 174,
       "k": "Sc3",
       "l": "Custom 3 : Temperature regulation setpoint",
@@ -1858,7 +2206,9 @@
     },
     {
       "a": 67,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 175,
       "k": "Sc4",
       "l": "Custom 4 : Temperature regulation setpoint",
@@ -1868,7 +2218,9 @@
     },
     {
       "a": 68,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 176,
       "k": "Sc5",
       "l": "Custom 5 : Temperature regulation setpoint",
@@ -1878,7 +2230,9 @@
     },
     {
       "a": 69,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 177,
       "k": "Sc6",
       "l": "Custom 6 : Temperature regulation setpoint",
@@ -1888,7 +2242,9 @@
     },
     {
       "a": 70,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 178,
       "k": "Sh1",
       "l": "Custom 1 : Humidity regulation setpoint",
@@ -1897,7 +2253,9 @@
     },
     {
       "a": 71,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 179,
       "k": "Sh2",
       "l": "Custom 2 : Humidity regulation setpoint",
@@ -1906,7 +2264,9 @@
     },
     {
       "a": 72,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 180,
       "k": "Sh3",
       "l": "Custom 3 : Humidity regulation setpoint",
@@ -1915,7 +2275,9 @@
     },
     {
       "a": 73,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 181,
       "k": "Sh4",
       "l": "Custom 4 : Humidity regulation setpoint",
@@ -1924,7 +2286,9 @@
     },
     {
       "a": 74,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 182,
       "k": "Sh5",
       "l": "Custom 5 : Humidity regulation setpoint",
@@ -1933,7 +2297,9 @@
     },
     {
       "a": 75,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 183,
       "k": "Sh6",
       "l": "Custom 6 : Humidity regulation setpoint",
@@ -1942,7 +2308,9 @@
     },
     {
       "a": 76,
+      "cat": 2,
       "fc": 3,
+      "g": 15,
       "id": 184,
       "k": "r4",
       "l": "Automatic night-time set point variation",
@@ -1952,7 +2320,9 @@
     },
     {
       "a": 29,
+      "cat": 2,
       "fc": 4,
+      "g": 15,
       "id": 185,
       "k": "rdA",
       "l": "Working differential",
@@ -1963,7 +2333,9 @@
     },
     {
       "a": 68,
+      "cat": 6,
       "fc": 2,
+      "g": 4,
       "id": 186,
       "k": "ELO",
       "l": "Low voltage detection",
@@ -1972,7 +2344,9 @@
     },
     {
       "a": 33,
+      "cat": 6,
       "fc": 2,
+      "g": 4,
       "id": 187,
       "k": "EHI",
       "l": "High voltage detection",
@@ -1981,7 +2355,9 @@
     },
     {
       "a": 18,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 188,
       "k": "rSA",
       "l": "Alarms reset",
@@ -1990,11 +2366,13 @@
     },
     {
       "a": 19,
+      "cat": 3,
       "enum": [
         "Disabled",
         "Enabled"
       ],
       "fc": 1,
+      "g": 1,
       "id": 189,
       "k": "nFE",
       "l": "NFC memory",
@@ -2003,7 +2381,9 @@
     },
     {
       "a": 71,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 190,
       "k": "S_ca8",
       "l": "VCC - Wrong rotor position",
@@ -2012,7 +2392,9 @@
     },
     {
       "a": 72,
+      "cat": 1,
       "fc": 2,
+      "g": 4,
       "id": 191,
       "k": "S_ca9",
       "l": "VCC - Over Temperature Fail",
@@ -2021,7 +2403,9 @@
     },
     {
       "a": 73,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 192,
       "k": "S_ca1",
       "l": "VCC - Overload Protection",
@@ -2030,7 +2414,9 @@
     },
     {
       "a": 74,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 193,
       "k": "S_ca2",
       "l": "VCC - Set speed data out of specification while the comp is running",
@@ -2039,7 +2425,9 @@
     },
     {
       "a": 75,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 194,
       "k": "S_ca4",
       "l": "VCC - Start Fail",
@@ -2048,7 +2436,9 @@
     },
     {
       "a": 76,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 195,
       "k": "S_ca5",
       "l": "VCC - Overload Condition",
@@ -2057,7 +2447,9 @@
     },
     {
       "a": 77,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 196,
       "k": "S_ca6",
       "l": "VCC - Under Speed",
@@ -2066,7 +2458,9 @@
     },
     {
       "a": 78,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 197,
       "k": "S_ca7",
       "l": "VCC - Short Circuit",
@@ -2075,7 +2469,9 @@
     },
     {
       "a": 79,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 198,
       "k": "Man",
       "l": "Manual mode active",
@@ -2084,7 +2480,9 @@
     },
     {
       "a": 80,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 199,
       "k": "E6",
       "l": "Probe S1H alarm",
@@ -2093,7 +2491,9 @@
     },
     {
       "a": 81,
+      "cat": 4,
       "fc": 2,
+      "g": 1,
       "id": 200,
       "k": "E7",
       "l": "Probe S2H alarm",
@@ -2102,7 +2502,9 @@
     },
     {
       "a": 20,
+      "cat": 3,
       "fc": 1,
+      "g": 1,
       "id": 201,
       "k": "AuC",
       "l": "AUX command",
@@ -2111,7 +2513,9 @@
     },
     {
       "a": 21,
+      "cat": 4,
       "fc": 1,
+      "g": 1,
       "id": 202,
       "k": "A1",
       "l": "Alarm thresholds (AL, AH) relative to the set point St or absolute",
@@ -2120,7 +2524,9 @@
     },
     {
       "a": 84,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 203,
       "k": "ALA",
       "l": "Absolute low temperature alarm threshold",
@@ -2131,7 +2537,9 @@
     },
     {
       "a": 85,
+      "cat": 4,
       "fc": 3,
+      "g": 1,
       "id": 204,
       "k": "AHA",
       "l": "Absolute high temperature alarm threshold",
@@ -2142,7 +2550,9 @@
     },
     {
       "a": 82,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 205,
       "k": "FOad",
       "l": "Condenser fan low speed",
@@ -2151,7 +2561,9 @@
     },
     {
       "a": 83,
+      "cat": 5,
       "fc": 2,
+      "g": 4,
       "id": 206,
       "k": "FOah",
       "l": "Condenser fan high speed",
@@ -2160,7 +2572,9 @@
     },
     {
       "a": 89,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 207,
       "k": "H14",
       "l": "Time light stays on after closing the door",
@@ -2170,7 +2584,9 @@
     },
     {
       "a": 90,
+      "cat": 1,
       "fc": 3,
+      "g": 4,
       "id": 208,
       "k": "Add",
       "l": "Ritardo allarme porta aperta e tempo di esclusione allarme di alta temperatura per porta aperta",
@@ -2180,7 +2596,9 @@
     },
     {
       "a": 35,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 209,
       "k": "IS_max",
       "l": "Numero di configurazioni embeddate",
@@ -2189,7 +2607,9 @@
     },
     {
       "a": 36,
+      "cat": 1,
       "fc": 4,
+      "g": 4,
       "id": 210,
       "k": "MaxIdxLED",
       "l": "Indice massimo per uscita analogica luce",
@@ -2198,7 +2618,9 @@
     },
     {
       "a": 37,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 211,
       "k": "ECAa",
       "l": "Anti-sweat heaters progressive consumption",
@@ -2208,7 +2630,9 @@
     },
     {
       "a": 38,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 212,
       "k": "ECAb",
       "l": "Compressor progressive consumption",
@@ -2218,7 +2642,9 @@
     },
     {
       "a": 39,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 213,
       "k": "ECAc",
       "l": "Compressor 2 progressive consumption",
@@ -2228,7 +2654,9 @@
     },
     {
       "a": 40,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 214,
       "k": "ECAd",
       "l": "Defrost progressive consumption",
@@ -2238,7 +2666,9 @@
     },
     {
       "a": 41,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 215,
       "k": "ECAf",
       "l": "Fan progressive consumption",
@@ -2248,7 +2678,9 @@
     },
     {
       "a": 42,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 216,
       "k": "ECAi",
       "l": "Light progressive consumption",
@@ -2258,7 +2690,9 @@
     },
     {
       "a": 43,
+      "cat": 6,
       "fc": 4,
+      "g": 4,
       "id": 217,
       "k": "ECAt",
       "l": "Total progressive consumption of all loads",
@@ -2268,7 +2702,9 @@
     },
     {
       "a": 91,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 218,
       "k": "IoT_LMt",
       "l": "LT/MT type",
@@ -2277,7 +2713,9 @@
     },
     {
       "a": 92,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 219,
       "k": "PoM",
       "l": "Nominal cooling capacity",
@@ -2287,7 +2725,9 @@
     },
     {
       "a": 93,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 220,
       "k": "IoT_Last",
       "l": "Property of being the last cabinet of the line",
@@ -2296,7 +2736,9 @@
     },
     {
       "a": 94,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 221,
       "k": "IoT_Line",
       "l": "Reference line",
@@ -2305,7 +2747,9 @@
     },
     {
       "a": 95,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 222,
       "k": "IoT_Gt",
       "l": "Type of goods",
@@ -2314,7 +2758,9 @@
     },
     {
       "a": 96,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 223,
       "k": "IoT_EU1",
       "l": "Type of cabinet",
@@ -2323,7 +2769,9 @@
     },
     {
       "a": 97,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 224,
       "k": "IoT_EU2",
       "l": "Type of cabinet if combined",
@@ -2332,7 +2780,9 @@
     },
     {
       "a": 98,
+      "cat": 10,
       "fc": 3,
+      "g": 15,
       "id": 225,
       "k": "IoT_EU3",
       "l": "Type of cabinet (model)",
