@@ -129,6 +129,16 @@
       "regs": 198,
       "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/fullgauge/multipower/fullgauge-modbus-multipower-v1.0.0.json",
       "vendor": "fullgauge"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "tc-970e",
+      "model": "TC-970E Log +Eco",
+      "profileId": "fullgauge-modbus-tc970e-log-eco-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 191,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/fullgauge/tc-970e/fullgauge-modbus-tc970e-log-eco-v1.0.0.json",
+      "vendor": "fullgauge"
     }
   ],
   "schema": 2
