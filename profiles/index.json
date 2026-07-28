@@ -139,6 +139,16 @@
       "regs": 191,
       "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/fullgauge/tc-970e/fullgauge-modbus-tc970e-log-eco-v1.0.0.json",
       "vendor": "fullgauge"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "slv-105n46",
+      "model": "SLV 105N46xx",
+      "profileId": "secop-modbus-slv105n46-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 97,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/secop/slv-105n46/secop-modbus-slv105n46-v1.0.0.json",
+      "vendor": "secop"
     }
   ],
   "schema": 2
