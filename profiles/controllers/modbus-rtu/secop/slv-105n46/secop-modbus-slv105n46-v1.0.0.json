@@ -14,8 +14,12 @@
   "quirks": {},
   "regs": [
     {
-      "a": 117,
+      "a": 116,
       "cat": 10,
+      "enum": [
+        "Enabled",
+        "Disabled"
+      ],
       "fc": 3,
       "g": 15,
       "id": 1,
@@ -27,7 +31,7 @@
       "w": 1
     },
     {
-      "a": 125,
+      "a": 124,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -42,25 +46,29 @@
       "w": 1
     },
     {
-      "a": 126,
+      "a": 125,
       "cat": 10,
+      "enum": [
+        "Disabled",
+        "Enabled"
+      ],
       "fc": 3,
       "g": 15,
       "id": 3,
       "k": "p126",
-      "l": "Night setback (0=Disabled, 1=Enabled)",
+      "l": "Night setback",
       "max": 1,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 175,
+      "a": 174,
       "cat": 10,
       "fc": 3,
       "g": 15,
       "id": 4,
       "k": "r04",
-      "l": "Temperature 'F1/F2_F4' offset",
+      "l": "Temperature F1/F2_F4 offset",
       "max": 10,
       "min": -10,
       "s": 0.1,
@@ -68,44 +76,81 @@
       "u": 1
     },
     {
-      "a": 178,
+      "a": 177,
       "cat": 10,
+      "enum": [
+        "App 1",
+        "App 2",
+        "App 3",
+        "App 4",
+        "App 5"
+      ],
       "fc": 3,
       "g": 15,
       "id": 5,
       "k": "P10",
-      "l": "Application selection via MMI (App 1..5)",
+      "l": "Application selection via MMI",
       "max": 4,
       "min": 0,
       "t": "u8",
       "w": 1
     },
     {
-      "a": 179,
+      "a": 178,
       "cat": 5,
+      "enum": [
+        "Power up delay",
+        "Service mode",
+        "Stopped mode",
+        "Case deicing",
+        "Case cleaning",
+        "Loading",
+        "Defrosting",
+        "Melting",
+        "Cooling after melt",
+        "Normal control",
+        "Door open",
+        "Emergency cooling",
+        "Safety alarm stop",
+        "Bus address in display",
+        "Restore factory settings",
+        "Store factory settings",
+        "Normal operating mode"
+      ],
       "fc": 3,
       "g": 4,
       "id": 6,
       "k": "U70",
-      "l": "Appliance Status (17 estados: Power-up delay, Service mode, Stopped, ...)",
+      "l": "Appliance status",
       "max": 16,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 180,
+      "a": 179,
       "cat": 10,
+      "enum": [
+        "F1/F2_F4 (U98)",
+        "Talarm (U57)",
+        "Tact (U17)",
+        "Temperature logger (U99)",
+        "F1 (U12)",
+        "F3 (U76)",
+        "F2 (U16)",
+        "F4 (U09)",
+        "S6 (U36)"
+      ],
       "fc": 3,
       "g": 15,
       "id": 7,
       "k": "o99",
-      "l": "Temperature for display source (0=F1/F2_F4, 2=Tact default, 3=Log, 4=F1, 5=F3, 6=F2, 7=F4, 8=S6)",
+      "l": "Temperature for display (selected source)",
       "max": 8,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 181,
+      "a": 180,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -119,8 +164,12 @@
       "w": 1
     },
     {
-      "a": 1013,
+      "a": 1012,
       "cat": 3,
+      "enum": [
+        "Disabled",
+        "Enabled"
+      ],
       "fc": 3,
       "g": 1,
       "id": 9,
@@ -132,8 +181,12 @@
       "w": 1
     },
     {
-      "a": 1027,
+      "a": 1026,
       "cat": 10,
+      "enum": [
+        "Disabled",
+        "Enabled"
+      ],
       "fc": 3,
       "g": 15,
       "id": 10,
@@ -145,42 +198,54 @@
       "w": 1
     },
     {
-      "a": 1036,
+      "a": 1035,
       "cat": 5,
+      "enum": [
+        "inactive",
+        "active"
+      ],
       "fc": 3,
       "g": 4,
       "id": 11,
       "k": "p1036",
-      "l": "Defrost State (0=inactive, 1=active)",
+      "l": "Defrost State",
       "max": 1,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 2003,
+      "a": 2002,
       "cat": 10,
       "fc": 3,
       "g": 15,
       "id": 12,
       "k": "p2003",
-      "l": "Software version (HI*256 + LO big-endian)",
+      "l": "Software version (HI*256 + LO; 0x010E = 1.14)",
       "t": "u16"
     },
     {
-      "a": 2022,
+      "a": 2021,
       "cat": 5,
+      "enum": [
+        "inactive",
+        "active"
+      ],
       "fc": 3,
       "g": 4,
       "id": 13,
       "k": "p2022",
-      "l": "Defrost hold state (0=inactive, 1=active; SAFETY: master limpa dentro da janela pra evitar A5)",
+      "l": "Defrost hold state",
       "max": 1,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 2058,
+      "a": 2057,
       "cat": 3,
+      "enum": [
+        "Disabled",
+        "Enabled"
+      ],
       "fc": 3,
       "g": 1,
       "id": 14,
@@ -192,13 +257,13 @@
       "w": 1
     },
     {
-      "a": 2611,
+      "a": 2610,
       "cat": 1,
       "fc": 3,
       "g": 4,
       "id": 15,
       "k": "U17",
-      "l": "Actual Temperature 'Tact'",
+      "l": "Actual Temperature 'Tact' (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -206,7 +271,7 @@
       "u": 1
     },
     {
-      "a": 2622,
+      "a": 2621,
       "cat": 2,
       "fc": 3,
       "g": 15,
@@ -221,20 +286,27 @@
       "w": 1
     },
     {
-      "a": 11000,
+      "a": 10999,
       "cat": 10,
+      "enum": [
+        "App 1",
+        "App 2",
+        "App 3",
+        "App 4",
+        "App 5"
+      ],
       "fc": 3,
       "g": 15,
       "id": 17,
       "k": "P20",
-      "l": "Selected Application (App 1..5)",
+      "l": "Selected Application",
       "max": 4,
       "min": 0,
       "t": "u8",
       "w": 1
     },
     {
-      "a": 11001,
+      "a": 11000,
       "cat": 4,
       "fc": 3,
       "g": 15,
@@ -248,7 +320,7 @@
       "w": 1
     },
     {
-      "a": 11002,
+      "a": 11001,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -263,7 +335,7 @@
       "w": 1
     },
     {
-      "a": 11003,
+      "a": 11002,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -277,7 +349,7 @@
       "w": 1
     },
     {
-      "a": 11004,
+      "a": 11003,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -291,13 +363,27 @@
       "w": 1
     },
     {
-      "a": 11005,
+      "a": 11004,
       "cat": 10,
       "fc": 3,
       "g": 15,
       "id": 22,
       "k": "d03",
-      "l": "Interval between defrost start (value/60 = hours; max 168h)",
+      "l": "Interval between defrost start (min; /60 = h, max 168 h)",
+      "max": 10080,
+      "min": 0,
+      "t": "u16",
+      "u": 23,
+      "w": 1
+    },
+    {
+      "a": 11005,
+      "cat": 10,
+      "fc": 3,
+      "g": 15,
+      "id": 23,
+      "k": "d62",
+      "l": "Min interval between manual defrost (min; 0 = sem limite)",
       "max": 10080,
       "min": 0,
       "t": "u16",
@@ -309,13 +395,13 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 23,
-      "k": "d62",
-      "l": "Min interval between manual defrost (value/60 = hours)",
-      "max": 10080,
-      "min": 0,
-      "t": "u16",
-      "u": 23,
+      "id": 24,
+      "k": "d71",
+      "l": "Defrost start hour: Sunday (d90=1) or 1st defrost (d90=2); -1 = off",
+      "max": 23,
+      "min": -1,
+      "t": "i8",
+      "u": 24,
       "w": 1
     },
     {
@@ -323,9 +409,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 24,
-      "k": "d71",
-      "l": "Start hour for defrost day 1 (Mon; -1 = off)",
+      "id": 25,
+      "k": "d72",
+      "l": "Defrost start hour: Monday (d90=1) or 2nd defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -337,9 +423,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 25,
-      "k": "d72",
-      "l": "Start hour for defrost day 2 (Tue)",
+      "id": 26,
+      "k": "d73",
+      "l": "Defrost start hour: Tuesday (d90=1) or 3rd defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -351,9 +437,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 26,
-      "k": "d73",
-      "l": "Start hour for defrost day 3 (Wed)",
+      "id": 27,
+      "k": "d74",
+      "l": "Defrost start hour: Wednesday (d90=1) or 4th defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -365,9 +451,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 27,
-      "k": "d74",
-      "l": "Start hour for defrost day 4 (Thu)",
+      "id": 28,
+      "k": "d75",
+      "l": "Defrost start hour: Thursday (d90=1) or 5th defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -379,9 +465,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 28,
-      "k": "d75",
-      "l": "Start hour for defrost day 5 (Fri)",
+      "id": 29,
+      "k": "d76",
+      "l": "Defrost start hour: Friday (d90=1) or 6th defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -393,9 +479,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 29,
-      "k": "d76",
-      "l": "Start hour for defrost day 6 (Sat)",
+      "id": 30,
+      "k": "d77",
+      "l": "Defrost start hour: Saturday (d90=1) or 7th defrost (d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -407,9 +493,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 30,
-      "k": "d77",
-      "l": "Start hour for defrost day 7 (Sun)",
+      "id": 31,
+      "k": "d78",
+      "l": "Defrost start hour: 8th defrost (only d90=2); -1 = off",
       "max": 23,
       "min": -1,
       "t": "i8",
@@ -421,13 +507,13 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 31,
-      "k": "d78",
-      "l": "Start hour for defrost day 8 (Holiday)",
-      "max": 23,
-      "min": -1,
+      "id": 32,
+      "k": "d81",
+      "l": "Defrost start minute: 1st defrost (only d90=2)",
+      "max": 59,
+      "min": 0,
       "t": "i8",
-      "u": 24,
+      "u": 23,
       "w": 1
     },
     {
@@ -435,12 +521,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 32,
-      "k": "d81",
-      "l": "Start minute for defrost day 1",
+      "id": 33,
+      "k": "d82",
+      "l": "Defrost start minute: 2nd defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -449,12 +535,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 33,
-      "k": "d82",
-      "l": "Start minute for defrost day 2",
+      "id": 34,
+      "k": "d83",
+      "l": "Defrost start minute: 3rd defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -463,12 +549,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 34,
-      "k": "d83",
-      "l": "Start minute for defrost day 3",
+      "id": 35,
+      "k": "d84",
+      "l": "Defrost start minute: 4th defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -477,12 +563,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 35,
-      "k": "d84",
-      "l": "Start minute for defrost day 4",
+      "id": 36,
+      "k": "d85",
+      "l": "Defrost start minute: 5th defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -491,12 +577,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 36,
-      "k": "d85",
-      "l": "Start minute for defrost day 5",
+      "id": 37,
+      "k": "d86",
+      "l": "Defrost start minute: 6th defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -505,12 +591,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 37,
-      "k": "d86",
-      "l": "Start minute for defrost day 6",
+      "id": 38,
+      "k": "d87",
+      "l": "Defrost start minute: 7th defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
@@ -519,27 +605,33 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 38,
-      "k": "d87",
-      "l": "Start minute for defrost day 7",
+      "id": 39,
+      "k": "d88",
+      "l": "Defrost start minute: 8th defrost (only d90=2)",
       "max": 59,
       "min": 0,
-      "t": "u8",
+      "t": "i8",
       "u": 23,
       "w": 1
     },
     {
       "a": 11022,
       "cat": 10,
+      "enum": [
+        "Never",
+        "One per day",
+        "Multi per day, fixed hour",
+        "Multi per day, timer based",
+        "On demand"
+      ],
       "fc": 3,
       "g": 15,
-      "id": 39,
-      "k": "d88",
-      "l": "Start minute for defrost day 8",
-      "max": 59,
+      "id": 40,
+      "k": "d90",
+      "l": "Defrosting method",
+      "max": 4,
       "min": 0,
       "t": "u8",
-      "u": 23,
       "w": 1
     },
     {
@@ -547,12 +639,13 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 40,
-      "k": "d90",
-      "l": "Defrosting Method (0=Never, 1=One/day, 2=Multi fixed hour, 3=Multi timer, 4=OnDemand)",
-      "max": 4,
+      "id": 41,
+      "k": "n24",
+      "l": "CCU power up delay",
+      "max": 240,
       "min": 0,
       "t": "u8",
+      "u": 22,
       "w": 1
     },
     {
@@ -560,12 +653,12 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 41,
-      "k": "n24",
-      "l": "CCU Power up delay (seconds)",
-      "max": 240,
+      "id": 42,
+      "k": "r16",
+      "l": "Time between melt periods (s; /3600 = h)",
+      "max": 36000,
       "min": 0,
-      "t": "u8",
+      "t": "u16",
       "u": 22,
       "w": 1
     },
@@ -574,13 +667,13 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 42,
-      "k": "r16",
-      "l": "Time between melt periods (value/3600 = hours)",
-      "max": 36000,
+      "id": 43,
+      "k": "r17",
+      "l": "Duration of melt period (s; /60 = min)",
+      "max": 600,
       "min": 0,
-      "t": "u8",
-      "u": 24,
+      "t": "u16",
+      "u": 22,
       "w": 1
     },
     {
@@ -588,13 +681,14 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 43,
-      "k": "r17",
-      "l": "Duration of melt period (value/60 = minutes)",
-      "max": 600,
-      "min": 0,
-      "t": "u16",
-      "u": 23,
+      "id": 44,
+      "k": "r19",
+      "l": "Lower temperature limit to start melt",
+      "max": 15,
+      "min": -15,
+      "s": 0.01,
+      "t": "i16",
+      "u": 1,
       "w": 1
     },
     {
@@ -602,9 +696,9 @@
       "cat": 10,
       "fc": 3,
       "g": 15,
-      "id": 44,
-      "k": "r19",
-      "l": "Lower T limit to start melt",
+      "id": 45,
+      "k": "r20",
+      "l": "Higher temperature limit to start melt",
       "max": 15,
       "min": -15,
       "s": 0.01,
@@ -614,34 +708,28 @@
     },
     {
       "a": 11028,
-      "cat": 10,
-      "fc": 3,
-      "g": 15,
-      "id": 45,
-      "k": "r20",
-      "l": "Higher T limit to start melt",
-      "max": 15,
-      "min": -15,
-      "s": 0.01,
-      "t": "i16",
-      "u": 1,
-      "w": 1
-    },
-    {
-      "a": 11029,
       "cat": 4,
+      "enum": [
+        "None",
+        "Application faults",
+        "All",
+        "Sys/Sensor/Elec/Motor faults",
+        "Sensor/Elec/Motor faults",
+        "Elec/Motor faults",
+        "Motor faults"
+      ],
       "fc": 3,
       "g": 15,
       "id": 46,
       "k": "o98",
-      "l": "Display local alarms filter (0=None, 1=App, 2=All, 3=Sys/Sensor/Elec/Motor, 4=Sensor/Elec/Motor, 5=Elec/Motor, 6=Motor)",
+      "l": "Display local alarms (filter)",
       "max": 6,
       "min": 0,
       "t": "u8",
       "w": 1
     },
     {
-      "a": 11030,
+      "a": 11029,
       "cat": 1,
       "fc": 3,
       "g": 4,
@@ -655,7 +743,7 @@
       "u": 1
     },
     {
-      "a": 11031,
+      "a": 11030,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -669,7 +757,7 @@
       "w": 1
     },
     {
-      "a": 11032,
+      "a": 11031,
       "cat": 10,
       "fc": 3,
       "g": 15,
@@ -683,7 +771,7 @@
       "w": 1
     },
     {
-      "a": 11033,
+      "a": 11032,
       "cat": 2,
       "fc": 3,
       "g": 15,
@@ -698,25 +786,34 @@
       "w": 1
     },
     {
-      "a": 11034,
+      "a": 11033,
       "cat": 5,
+      "enum": [
+        "Off",
+        "Pull down",
+        "Pull up",
+        "In range",
+        "Out of range up",
+        "Out of range down",
+        "Override"
+      ],
       "fc": 3,
       "g": 4,
       "id": 51,
       "k": "n56",
-      "l": "SLV state (0=Off, 1=Pull down, 2=Pull up, 3=In range, 4=Out of range Up, 5=Out of range Down, 6=Override)",
+      "l": "SLV state",
       "max": 6,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 11035,
-      "cat": 4,
+      "a": 11034,
+      "cat": 1,
       "fc": 3,
-      "g": 1,
+      "g": 4,
       "id": 52,
       "k": "U57",
-      "l": "Alarm Temperature 'Talarm'",
+      "l": "Alarm Temperature 'Talarm' (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -724,13 +821,13 @@
       "u": 1
     },
     {
-      "a": 11036,
+      "a": 11035,
       "cat": 1,
       "fc": 3,
       "g": 4,
       "id": 53,
       "k": "U56",
-      "l": "Displayed Temperature 'Tdisp' (nota: escala 0.1, diferente do Tact 0.01)",
+      "l": "Displayed Temperature 'Tdisp' (escala 0.1; +-300.0 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.1,
@@ -738,14 +835,38 @@
       "u": 1
     },
     {
-      "a": 11037,
+      "a": 11036,
       "cat": 10,
+      "enum": [
+        "Normal mode",
+        "Service mode",
+        "Customer lab",
+        "Secop test",
+        "Supply chain test"
+      ],
       "fc": 3,
       "g": 15,
       "id": 54,
       "k": "P83",
-      "l": "Test/Service Mode selection (0=Normal, 1=Service, 2..4=Test modes; requerido =1 pra PNUs 11038..11042)",
-      "max": 4,
+      "l": "Test mode selection (requerido =1 pros testes de rele P84..P88)",
+      "max": 1,
+      "min": 0,
+      "t": "u8",
+      "w": 1
+    },
+    {
+      "a": 11037,
+      "cat": 3,
+      "enum": [
+        "off",
+        "on"
+      ],
+      "fc": 3,
+      "g": 15,
+      "id": 55,
+      "k": "P84",
+      "l": "R1 test control (SAFETY: aciona rele; requer P83=1)",
+      "max": 1,
       "min": 0,
       "t": "u8",
       "w": 1
@@ -753,11 +874,15 @@
     {
       "a": 11038,
       "cat": 3,
+      "enum": [
+        "off",
+        "on"
+      ],
       "fc": 3,
       "g": 15,
-      "id": 55,
-      "k": "P84",
-      "l": "R1 test (relay manual on; SAFETY: requer P83=1)",
+      "id": 56,
+      "k": "P85",
+      "l": "R2 test control (SAFETY: aciona rele; requer P83=1)",
       "max": 1,
       "min": 0,
       "t": "u8",
@@ -766,11 +891,15 @@
     {
       "a": 11039,
       "cat": 3,
+      "enum": [
+        "off",
+        "on"
+      ],
       "fc": 3,
       "g": 15,
-      "id": 56,
-      "k": "P85",
-      "l": "R2 test (SAFETY: requer P83=1)",
+      "id": 57,
+      "k": "P86",
+      "l": "R3 test control (SAFETY: aciona rele; requer P83=1)",
       "max": 1,
       "min": 0,
       "t": "u8",
@@ -779,11 +908,15 @@
     {
       "a": 11040,
       "cat": 3,
+      "enum": [
+        "off",
+        "on"
+      ],
       "fc": 3,
       "g": 15,
-      "id": 57,
-      "k": "P86",
-      "l": "R3 test (SAFETY: requer P83=1)",
+      "id": 58,
+      "k": "P87",
+      "l": "R4 test control (SAFETY: aciona rele; requer P83=1)",
       "max": 1,
       "min": 0,
       "t": "u8",
@@ -792,11 +925,15 @@
     {
       "a": 11041,
       "cat": 3,
+      "enum": [
+        "off",
+        "on"
+      ],
       "fc": 3,
       "g": 15,
-      "id": 58,
-      "k": "P87",
-      "l": "R4 test (SAFETY: requer P83=1)",
+      "id": 59,
+      "k": "P88",
+      "l": "R5 test control (SAFETY: aciona rele; requer P83=1)",
       "max": 1,
       "min": 0,
       "t": "u8",
@@ -804,25 +941,26 @@
     },
     {
       "a": 11042,
-      "cat": 3,
+      "cat": 1,
       "fc": 3,
-      "g": 15,
-      "id": 59,
-      "k": "P88",
-      "l": "R5 test (SAFETY: requer P83=1)",
-      "max": 1,
-      "min": 0,
-      "t": "u8",
-      "w": 1
+      "g": 4,
+      "id": 60,
+      "k": "U09",
+      "l": "F4 Temperature (S5) (+-300 = erro de sensor)",
+      "max": 300,
+      "min": -300,
+      "s": 0.01,
+      "t": "i16",
+      "u": 1
     },
     {
       "a": 11043,
       "cat": 1,
       "fc": 3,
       "g": 4,
-      "id": 60,
-      "k": "U09",
-      "l": "F4 Temperature (weighted virtual sensor)",
+      "id": 61,
+      "k": "U12",
+      "l": "F1 Temperature (S3) (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -834,9 +972,9 @@
       "cat": 1,
       "fc": 3,
       "g": 4,
-      "id": 61,
-      "k": "U12",
-      "l": "F1 Temperature",
+      "id": 62,
+      "k": "U16",
+      "l": "F2 Temperature (S4) (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -844,13 +982,13 @@
       "u": 1
     },
     {
-      "a": 11045,
+      "a": 11046,
       "cat": 1,
       "fc": 3,
       "g": 4,
-      "id": 62,
-      "k": "U16",
-      "l": "F2 Temperature",
+      "id": 63,
+      "k": "U76",
+      "l": "F3 Temperature (S3b) (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -859,20 +997,6 @@
     },
     {
       "a": 11047,
-      "cat": 1,
-      "fc": 3,
-      "g": 4,
-      "id": 63,
-      "k": "U76",
-      "l": "F3 Temperature",
-      "max": 300,
-      "min": -300,
-      "s": 0.01,
-      "t": "i16",
-      "u": 1
-    },
-    {
-      "a": 11048,
       "cat": 4,
       "fc": 3,
       "g": 15,
@@ -886,13 +1010,13 @@
       "w": 1
     },
     {
-      "a": 11049,
+      "a": 11048,
       "cat": 4,
       "fc": 3,
       "g": 15,
       "id": 65,
       "k": "A12",
-      "l": "Temperature alarm delay (other modes)",
+      "l": "Temperature alarm delay (after other modes)",
       "max": 240,
       "min": 1,
       "t": "u8",
@@ -900,7 +1024,7 @@
       "w": 1
     },
     {
-      "a": 11050,
+      "a": 11049,
       "cat": 4,
       "fc": 3,
       "g": 15,
@@ -915,7 +1039,7 @@
       "w": 1
     },
     {
-      "a": 11051,
+      "a": 11050,
       "cat": 4,
       "fc": 3,
       "g": 15,
@@ -930,38 +1054,38 @@
       "w": 1
     },
     {
-      "a": 11052,
+      "a": 11051,
       "cat": 4,
       "fc": 3,
       "g": 1,
       "id": 68,
       "k": "P34",
-      "l": "Active Alarm (0=none, 1..255=event code; decoded via 78-entry table in Painel)",
+      "l": "Active Alarm (0=none, 1..255=event code; tabela de 78 eventos no Painel)",
       "max": 255,
       "min": 0,
       "t": "u8"
     },
     {
-      "a": 11053,
+      "a": 11052,
       "cat": 5,
       "fc": 3,
       "g": 4,
       "id": 69,
       "k": "L99",
-      "l": "Actual compressor speed (RPM)",
+      "l": "Actual compressor speed",
       "max": 32767,
       "min": -32768,
       "t": "i16",
       "u": 16
     },
     {
-      "a": 11054,
+      "a": 11053,
       "cat": 1,
       "fc": 3,
       "g": 4,
       "id": 70,
       "k": "U37",
-      "l": "Defrost Temperature 'Tdefr'",
+      "l": "Defrost Temperature 'Tdefr' (+-300 = erro de sensor)",
       "max": 300,
       "min": -300,
       "s": 0.01,
@@ -969,26 +1093,35 @@
       "u": 1
     },
     {
-      "a": 11055,
+      "a": 11054,
       "cat": 4,
+      "enum": [
+        "None",
+        "Application faults",
+        "All",
+        "Sys/Sensor/Elec/Motor faults",
+        "Sensor/Elec/Motor faults",
+        "Elec/Motor faults",
+        "Motor faults"
+      ],
       "fc": 3,
       "g": 15,
       "id": 71,
       "k": "o97",
-      "l": "Alarm-on-relay filter (mesmo enum de o98)",
+      "l": "Alarm on relay (filter)",
       "max": 6,
       "min": 0,
       "t": "u8",
       "w": 1
     },
     {
-      "a": 11056,
+      "a": 11055,
       "cat": 10,
       "fc": 3,
       "g": 15,
       "id": 72,
       "k": "o84",
-      "l": "Auto Acknowledge Timer (0=off, else min)",
+      "l": "Auto acknowledge timer (0=off)",
       "max": 240,
       "min": 0,
       "t": "u8",
@@ -996,7 +1129,7 @@
       "w": 1
     },
     {
-      "a": 20000,
+      "a": 19999,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1006,7 +1139,7 @@
       "t": "bit"
     },
     {
-      "a": 20001,
+      "a": 20000,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1016,7 +1149,7 @@
       "t": "bit"
     },
     {
-      "a": 20002,
+      "a": 20001,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1026,7 +1159,7 @@
       "t": "bit"
     },
     {
-      "a": 20003,
+      "a": 20002,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1036,7 +1169,7 @@
       "t": "bit"
     },
     {
-      "a": 20004,
+      "a": 20003,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1046,7 +1179,7 @@
       "t": "bit"
     },
     {
-      "a": 20005,
+      "a": 20004,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1056,7 +1189,7 @@
       "t": "bit"
     },
     {
-      "a": 20006,
+      "a": 20005,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1066,7 +1199,7 @@
       "t": "bit"
     },
     {
-      "a": 20007,
+      "a": 20006,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1076,7 +1209,7 @@
       "t": "bit"
     },
     {
-      "a": 20008,
+      "a": 20007,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1086,7 +1219,7 @@
       "t": "bit"
     },
     {
-      "a": 20009,
+      "a": 20008,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1096,13 +1229,23 @@
       "t": "bit"
     },
     {
-      "a": 20010,
+      "a": 20009,
       "cat": 4,
       "fc": 3,
       "g": 1,
       "id": 83,
       "k": "p20010",
-      "l": "F1 sensor error",
+      "l": "F1 sensor error (S3)",
+      "t": "bit"
+    },
+    {
+      "a": 20010,
+      "cat": 4,
+      "fc": 3,
+      "g": 1,
+      "id": 84,
+      "k": "p20011",
+      "l": "F2 sensor error (S4)",
       "t": "bit"
     },
     {
@@ -1110,33 +1253,23 @@
       "cat": 4,
       "fc": 3,
       "g": 1,
-      "id": 84,
-      "k": "p20011",
-      "l": "F2 sensor error",
-      "t": "bit"
-    },
-    {
-      "a": 20012,
-      "cat": 4,
-      "fc": 3,
-      "g": 1,
       "id": 85,
       "k": "p20012",
-      "l": "F3 sensor error",
+      "l": "F3 sensor error (S3b)",
       "t": "bit"
     },
     {
-      "a": 20014,
+      "a": 20013,
       "cat": 4,
       "fc": 3,
       "g": 1,
       "id": 86,
       "k": "p20014",
-      "l": "F4 sensor error",
+      "l": "F4 sensor error (S5)",
       "t": "bit"
     },
     {
-      "a": 20015,
+      "a": 20014,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1146,7 +1279,7 @@
       "t": "bit"
     },
     {
-      "a": 20016,
+      "a": 20015,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1156,7 +1289,7 @@
       "t": "bit"
     },
     {
-      "a": 20017,
+      "a": 20016,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1166,7 +1299,7 @@
       "t": "bit"
     },
     {
-      "a": 20018,
+      "a": 20017,
       "cat": 4,
       "fc": 3,
       "g": 1,
@@ -1176,27 +1309,27 @@
       "t": "bit"
     },
     {
-      "a": 20019,
+      "a": 20018,
       "cat": 4,
       "fc": 3,
       "g": 1,
       "id": 91,
       "k": "p20019",
-      "l": "Service mode (DEPRECATED — usar PNU 11037/P83)",
+      "l": "Service mode (0x40 = ativo; preferir PNU 11037/P83)",
       "t": "bit"
     },
     {
-      "a": 20020,
+      "a": 20019,
       "cat": 4,
       "fc": 3,
       "g": 1,
       "id": 92,
       "k": "p20020",
-      "l": "Alarm on DI E16 (Separate Alarm In)",
+      "l": "Alarm on DI (E16, separate alarm in)",
       "t": "bit"
     },
     {
-      "a": 64045,
+      "a": 64044,
       "cat": 8,
       "fc": 3,
       "g": 11,
@@ -1210,7 +1343,7 @@
       "w": 1
     },
     {
-      "a": 64046,
+      "a": 64045,
       "cat": 8,
       "fc": 3,
       "g": 11,
@@ -1224,7 +1357,7 @@
       "w": 1
     },
     {
-      "a": 64047,
+      "a": 64046,
       "cat": 8,
       "fc": 3,
       "g": 11,
@@ -1237,7 +1370,7 @@
       "w": 1
     },
     {
-      "a": 64048,
+      "a": 64047,
       "cat": 8,
       "fc": 3,
       "g": 11,
@@ -1250,13 +1383,13 @@
       "w": 1
     },
     {
-      "a": 64049,
+      "a": 64048,
       "cat": 8,
       "fc": 3,
       "g": 11,
       "id": 97,
       "k": "t47",
-      "l": "RTC Year (2-digit, e.g. 26 = 2026)",
+      "l": "RTC Year (2 digitos)",
       "max": 99,
       "min": 1,
       "t": "u8",
