@@ -112,6 +112,16 @@
     },
     {
       "deviceClass": "refrigeration-controller",
+      "family": "upc3",
+      "model": "uPC3 EVACON",
+      "profileId": "carel-modbus-upc3-evacon-v1.0.0",
+      "protocol": "modbus-rtu",
+      "regs": 56,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/carel/upc3/carel-modbus-upc3-evacon-v1.0.0.json",
+      "vendor": "carel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
       "family": "sync",
       "model": "Sync Controller",
       "profileId": "embraco-modbus-sync-v1.0.0",

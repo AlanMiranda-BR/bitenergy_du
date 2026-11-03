@@ -1,0 +1,764 @@
+{
+  "bus": {
+    "baud": 19200,
+    "bits": 8,
+    "endian": "B",
+    "parity": "N",
+    "stop": 2
+  },
+  "deviceClass": "refrigeration-controller",
+  "family": "upc3",
+  "model": "uPC3 EVACON",
+  "profileId": "carel-modbus-upc3-evacon-v1.0.0",
+  "protocol": "modbus-rtu",
+  "quirks": {},
+  "regs": [
+    {
+      "a": 0,
+      "cat": 3,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 1,
+      "g": 1,
+      "id": 1,
+      "k": "fc1_a0",
+      "l": "Liga/desliga do equipamento",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 1,
+      "cat": 3,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 1,
+      "g": 1,
+      "id": 2,
+      "k": "fc1_a1",
+      "l": "Liga/desliga via local/remoto (seleção local/remoto)",
+      "t": "bit",
+      "w": 1
+    },
+    {
+      "a": 0,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 3,
+      "k": "fc4_a0",
+      "l": "Temperatura de retorno da água gelada",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 1,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 4,
+      "k": "fc4_a1",
+      "l": "Temperatura de envio da água gelada",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 2,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 5,
+      "k": "fc4_a2",
+      "l": "Pressão de condensação do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 18
+    },
+    {
+      "a": 3,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 6,
+      "k": "fc4_a3",
+      "l": "Pressão de condensação do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 18
+    },
+    {
+      "a": 4,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 7,
+      "k": "fc4_a4",
+      "l": "Temperatura de condensação do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 5,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 8,
+      "k": "fc4_a5",
+      "l": "Temperatura de condensação do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 6,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 9,
+      "k": "fc4_a6",
+      "l": "Pressão de evaporação do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 18
+    },
+    {
+      "a": 7,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 10,
+      "k": "fc4_a7",
+      "l": "Pressão de evaporação do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 18
+    },
+    {
+      "a": 8,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 11,
+      "k": "fc4_a8",
+      "l": "Temperatura de evaporação do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 9,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 12,
+      "k": "fc4_a9",
+      "l": "Temperatura de evaporação do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 10,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 13,
+      "k": "fc4_a10",
+      "l": "Temperatura de sucção do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 11,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 14,
+      "k": "fc4_a11",
+      "l": "Temperatura de sucção do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 12,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 15,
+      "k": "fc4_a12",
+      "l": "Temperatura de descarga do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 13,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 16,
+      "k": "fc4_a13",
+      "l": "Temperatura de descarga do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 14,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 17,
+      "k": "fc4_a14",
+      "l": "Subresfriamento do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 15,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 18,
+      "k": "fc4_a15",
+      "l": "Subresfriamento do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 16,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 19,
+      "k": "fc4_a16",
+      "l": "Superaquecimento do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 17,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 20,
+      "k": "fc4_a17",
+      "l": "Superaquecimento do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 1
+    },
+    {
+      "a": 18,
+      "cat": 5,
+      "fc": 4,
+      "g": 4,
+      "id": 21,
+      "k": "fc4_a18",
+      "l": "Abertura da válvula de expansão do circuito 1",
+      "s": 0.1,
+      "t": "i16",
+      "u": 3
+    },
+    {
+      "a": 19,
+      "cat": 5,
+      "fc": 4,
+      "g": 4,
+      "id": 22,
+      "k": "fc4_a19",
+      "l": "Abertura da válvula de expansão do circuito 2",
+      "s": 0.1,
+      "t": "i16",
+      "u": 3
+    },
+    {
+      "a": 20,
+      "cat": 1,
+      "fc": 4,
+      "g": 4,
+      "id": 23,
+      "k": "fc4_a20",
+      "l": "Vazão do sensor de fluxo IFM (m³/h)",
+      "s": 0.1,
+      "t": "i16"
+    },
+    {
+      "a": 0,
+      "cat": 5,
+      "enum": [
+        "Desligada",
+        "Ligada"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 24,
+      "k": "fc2_a0",
+      "l": "Status da bomba",
+      "t": "bit"
+    },
+    {
+      "a": 1,
+      "cat": 5,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 25,
+      "k": "fc2_a1",
+      "l": "Status do compressor 1",
+      "t": "bit"
+    },
+    {
+      "a": 2,
+      "cat": 5,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 26,
+      "k": "fc2_a2",
+      "l": "Status do compressor 2",
+      "t": "bit"
+    },
+    {
+      "a": 3,
+      "cat": 5,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 27,
+      "k": "fc2_a3",
+      "l": "Status do ventilador do circuito 1",
+      "t": "bit"
+    },
+    {
+      "a": 4,
+      "cat": 5,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 28,
+      "k": "fc2_a4",
+      "l": "Status do ventilador do circuito 2",
+      "t": "bit"
+    },
+    {
+      "a": 5,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 29,
+      "k": "fc2_a5",
+      "l": "Alarme geral (ao menos um alarme ativo)",
+      "t": "bit"
+    },
+    {
+      "a": 6,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 30,
+      "k": "fc2_a6",
+      "l": "Sobrecarga da bomba (disjuntor desarmado)",
+      "t": "bit"
+    },
+    {
+      "a": 7,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 31,
+      "k": "fc2_a7",
+      "l": "Sobrecarga do compressor 1 (disjuntor desarmado)",
+      "t": "bit"
+    },
+    {
+      "a": 8,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 32,
+      "k": "fc2_a8",
+      "l": "Sobrecarga do compressor 2 (disjuntor desarmado)",
+      "t": "bit"
+    },
+    {
+      "a": 9,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 33,
+      "k": "fc2_a9",
+      "l": "Sobrecarga do ventilador do circuito 1 (disjuntor desarmado)",
+      "t": "bit"
+    },
+    {
+      "a": 10,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 34,
+      "k": "fc2_a10",
+      "l": "Sobrecarga do ventilador do circuito 2 (disjuntor desarmado)",
+      "t": "bit"
+    },
+    {
+      "a": 11,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 35,
+      "k": "fc2_a11",
+      "l": "Alarme de nível baixo do reservatório",
+      "t": "bit"
+    },
+    {
+      "a": 12,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 36,
+      "k": "fc2_a12",
+      "l": "Alarme de fluxo do circuito 1 (falta de fluxo no evaporador)",
+      "t": "bit"
+    },
+    {
+      "a": 13,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 37,
+      "k": "fc2_a13",
+      "l": "Alarme de fluxo do circuito 2 (falta de fluxo no evaporador)",
+      "t": "bit"
+    },
+    {
+      "a": 14,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 38,
+      "k": "fc2_a14",
+      "l": "Alarme de falta de fase",
+      "t": "bit"
+    },
+    {
+      "a": 15,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 39,
+      "k": "fc2_a15",
+      "l": "Alarme de módulo EVD offline",
+      "t": "bit"
+    },
+    {
+      "a": 16,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 40,
+      "k": "fc2_a16",
+      "l": "Alarme de erro no motor A do drive 1 (válvula do circuito 1)",
+      "t": "bit"
+    },
+    {
+      "a": 17,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 41,
+      "k": "fc2_a17",
+      "l": "Alarme de erro no motor B do drive 1 (válvula do circuito 2)",
+      "t": "bit"
+    },
+    {
+      "a": 18,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 42,
+      "k": "fc2_a18",
+      "l": "Alarme de baixo superaquecimento do circuito 1",
+      "t": "bit"
+    },
+    {
+      "a": 19,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 43,
+      "k": "fc2_a19",
+      "l": "Alarme de baixo superaquecimento do circuito 2",
+      "t": "bit"
+    },
+    {
+      "a": 20,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 44,
+      "k": "fc2_a20",
+      "l": "Alarme LOP do circuito 1 (baixa pressão de operação)",
+      "t": "bit"
+    },
+    {
+      "a": 21,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 45,
+      "k": "fc2_a21",
+      "l": "Alarme LOP do circuito 2 (baixa pressão de operação)",
+      "t": "bit"
+    },
+    {
+      "a": 22,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 46,
+      "k": "fc2_a22",
+      "l": "Alarme MOP do circuito 1 (alta pressão de operação)",
+      "t": "bit"
+    },
+    {
+      "a": 23,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 47,
+      "k": "fc2_a23",
+      "l": "Alarme MOP do circuito 2 (alta pressão de operação)",
+      "t": "bit"
+    },
+    {
+      "a": 24,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 48,
+      "k": "fc2_a24",
+      "l": "Alarme de baixa sucção do circuito 1 (baixa pressão de sucção)",
+      "t": "bit"
+    },
+    {
+      "a": 25,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 49,
+      "k": "fc2_a25",
+      "l": "Alarme de baixa sucção do circuito 2 (baixa pressão de sucção)",
+      "t": "bit"
+    },
+    {
+      "a": 26,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 50,
+      "k": "fc2_a26",
+      "l": "Alarme de anticongelamento do evaporador do circuito 1",
+      "t": "bit"
+    },
+    {
+      "a": 27,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 51,
+      "k": "fc2_a27",
+      "l": "Alarme de anticongelamento do evaporador do circuito 2",
+      "t": "bit"
+    },
+    {
+      "a": 28,
+      "cat": 5,
+      "enum": [
+        "Desligado",
+        "Ligado"
+      ],
+      "fc": 2,
+      "g": 4,
+      "id": 52,
+      "k": "fc2_a28",
+      "l": "Status do equipamento",
+      "t": "bit"
+    },
+    {
+      "a": 29,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 53,
+      "k": "fc2_a29",
+      "l": "Alarme de fluxostato do circuito 1",
+      "t": "bit"
+    },
+    {
+      "a": 30,
+      "cat": 4,
+      "enum": [
+        "Desativado",
+        "Ativo"
+      ],
+      "fc": 2,
+      "g": 1,
+      "id": 54,
+      "k": "fc2_a30",
+      "l": "Alarme de fluxostato do circuito 2",
+      "t": "bit"
+    },
+    {
+      "a": 0,
+      "cat": 2,
+      "fc": 3,
+      "g": 4,
+      "id": 55,
+      "k": "fc3_a0",
+      "l": "Ajuste de setpoint (regulação pela entrada, modo resfriamento)",
+      "max": 20,
+      "min": 8,
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    },
+    {
+      "a": 1,
+      "cat": 2,
+      "fc": 3,
+      "g": 15,
+      "id": 56,
+      "k": "fc3_a1",
+      "l": "Ajuste proporcional (diferença entre os setpoints de entrada e saída)",
+      "max": 10,
+      "min": 0.5,
+      "s": 0.1,
+      "t": "i16",
+      "u": 1,
+      "w": 1
+    }
+  ],
+  "schema": 2,
+  "vendor": "carel"
+}
