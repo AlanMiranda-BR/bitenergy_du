@@ -159,6 +159,16 @@
       "regs": 97,
       "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/controllers/modbus-rtu/secop/slv-105n46/secop-modbus-slv105n46-v1.0.0.json",
       "vendor": "secop"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "lcd5",
+      "model": "LCD5 discovery",
+      "profileId": "indrel-modbus-lcd5-discovery-v0.1.0",
+      "protocol": "modbus-rtu",
+      "regs": 1,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/discovery/indrel-modbus-lcd5-discovery-v0.1.0.json",
+      "vendor": "indrel"
     }
   ],
   "schema": 2
