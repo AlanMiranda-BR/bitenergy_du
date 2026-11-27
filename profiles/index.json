@@ -163,11 +163,41 @@
     {
       "deviceClass": "refrigeration-controller",
       "family": "lcd5",
-      "model": "LCD5 discovery",
+      "model": "LCD5 discovery 9600 8N1",
       "profileId": "indrel-modbus-lcd5-discovery-v0.1.0",
       "protocol": "modbus-rtu",
       "regs": 1,
       "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/discovery/indrel-modbus-lcd5-discovery-v0.1.0.json",
+      "vendor": "indrel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "lcd5",
+      "model": "LCD5 discovery 19200 8N1",
+      "profileId": "indrel-modbus-lcd5-discovery-v0.1.1",
+      "protocol": "modbus-rtu",
+      "regs": 1,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/discovery/indrel-modbus-lcd5-discovery-v0.1.1.json",
+      "vendor": "indrel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "lcd5",
+      "model": "LCD5 discovery 9600 8E1",
+      "profileId": "indrel-modbus-lcd5-discovery-v0.1.2",
+      "protocol": "modbus-rtu",
+      "regs": 1,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/discovery/indrel-modbus-lcd5-discovery-v0.1.2.json",
+      "vendor": "indrel"
+    },
+    {
+      "deviceClass": "refrigeration-controller",
+      "family": "lcd5",
+      "model": "LCD5 discovery 19200 8E1",
+      "profileId": "indrel-modbus-lcd5-discovery-v0.1.3",
+      "protocol": "modbus-rtu",
+      "regs": 1,
+      "url": "https://raw.githubusercontent.com/AlanMiranda-BR/bitenergy_du/main/profiles/discovery/indrel-modbus-lcd5-discovery-v0.1.3.json",
       "vendor": "indrel"
     }
   ],

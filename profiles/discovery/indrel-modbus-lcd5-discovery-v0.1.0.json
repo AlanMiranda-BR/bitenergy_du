@@ -8,7 +8,7 @@
   },
   "deviceClass": "refrigeration-controller",
   "family": "lcd5",
-  "model": "LCD5 discovery",
+  "model": "LCD5 discovery 9600 8N1",
   "profileId": "indrel-modbus-lcd5-discovery-v0.1.0",
   "protocol": "modbus-rtu",
   "regs": [

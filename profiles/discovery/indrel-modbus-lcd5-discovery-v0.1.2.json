@@ -1,0 +1,30 @@
+{
+  "bus": {
+    "baud": 9600,
+    "bits": 8,
+    "endian": "L",
+    "parity": "E",
+    "stop": 1
+  },
+  "deviceClass": "refrigeration-controller",
+  "family": "lcd5",
+  "model": "LCD5 discovery 9600 8E1",
+  "profileId": "indrel-modbus-lcd5-discovery-v0.1.2",
+  "protocol": "modbus-rtu",
+  "regs": [
+    {
+      "a": 0,
+      "cat": 0,
+      "fc": 3,
+      "g": 15,
+      "id": 1,
+      "k": "fc3_a0",
+      "l": "Placeholder de descoberta (fora de grupo)",
+      "s": 1,
+      "t": "u16",
+      "u": 0
+    }
+  ],
+  "schema": 2,
+  "vendor": "indrel"
+}
